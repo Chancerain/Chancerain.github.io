@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Chancerain</title>
+  
+  <subtitle>小而美的Blog</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-02-12T21:36:05.164Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Chancerain</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://example.com/2022/02/13/%E6%B5%8B%E8%AF%95-1/"/>
+    <id>http://example.com/2022/02/13/%E6%B5%8B%E8%AF%95-1/</id>
+    <published>2022-02-12T21:34:44.000Z</published>
+    <updated>2022-02-12T21:36:05.164Z</updated>
+    
+    
+    
+    
+    <category term="-测试" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="test" scheme="http://example.com/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://example.com/2022/02/12/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2022/02/12/%E6%B5%8B%E8%AF%95/</id>
+    <published>2022-02-12T08:08:38.000Z</published>
+    <updated>2022-02-12T08:08:38.550Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>湖南财政经济学院</title>
+    <link href="http://example.com/2022/02/11/%E6%B9%96%E5%8D%97%E8%B4%A2%E6%94%BF%E7%BB%8F%E6%B5%8E%E5%AD%A6%E9%99%A2/"/>
+    <id>http://example.com/2022/02/11/%E6%B9%96%E5%8D%97%E8%B4%A2%E6%94%BF%E7%BB%8F%E6%B5%8E%E5%AD%A6%E9%99%A2/</id>
+    <published>2022-02-11T00:45:24.000Z</published>
+    <updated>2022-02-11T00:45:24.647Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2</title>
+    <link href="http://example.com/2022/02/11/2/"/>
+    <id>http://example.com/2022/02/11/2/</id>
+    <published>2022-02-11T00:41:35.000Z</published>
+    <updated>2022-02-11T00:41:35.922Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>11</title>
+    <link href="http://example.com/2022/02/11/11/"/>
+    <id>http://example.com/2022/02/11/11/</id>
+    <published>2022-02-11T00:13:18.000Z</published>
+    <updated>2022-02-11T00:27:45.564Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;title: 11&lt;br&gt;date: 2022-02-11 08:13:18&lt;br&gt;tags:&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;p&gt;title: 11&lt;br&gt;date: 2022-02-11 08:13:18&lt;br&gt;tags:&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;p&gt;ti</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/02/11/hello-world/"/>
+    <id>http://example.com/2022/02/11/hello-world/</id>
+    <published>2022-02-11T00:11:46.437Z</published>
+    <updated>2022-02-11T00:11:46.437Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/02/11/03%20%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84this/"/>
+    <id>http://example.com/2022/02/11/03%20%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84this/</id>
+    <published>2022-02-10T18:04:19.508Z</published>
+    <updated>2022-02-10T18:04:33.315Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/02/11/02%20%E6%95%B0%E6%8D%AE%20%E5%8F%98%E9%87%8F%20%E5%86%85%E5%AD%98/"/>
+    <id>http://example.com/2022/02/11/02%20%E6%95%B0%E6%8D%AE%20%E5%8F%98%E9%87%8F%20%E5%86%85%E5%AD%98/</id>
+    <published>2022-02-10T16:47:01.722Z</published>
+    <updated>2022-02-10T16:54:08.312Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="赋值和内存的问题"><a href="#赋值和内存的问题" class="headerlink" title="赋值和内存的问题"></a>赋值和内存的问题</h3><p>x是基本数据 内存中保存的这个数据</p><p>x是对象 内存中保存的是地址值</p><p>x是变量 内存中保存的是基本数据或地址值</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;赋值和内存的问题&quot;&gt;&lt;a href=&quot;#赋值和内存的问题&quot; class=&quot;headerlink&quot; title=&quot;赋值和内存的问题&quot;&gt;&lt;/a&gt;赋值和内存的问题&lt;/h3&gt;&lt;p&gt;x是基本数据 内存中保存的这个数据&lt;/p&gt;
+&lt;p&gt;x是对象 内存中保存的是地址值&lt;/p&gt;
+&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>变量提升和函数提升</title>
+    <link href="http://example.com/2020/02/11/01%20%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E5%92%8C%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/"/>
+    <id>http://example.com/2020/02/11/01%20%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E5%92%8C%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</id>
+    <published>2020-02-11T00:45:24.000Z</published>
+    <updated>2022-02-11T22:27:31.623Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="变量声明提升"><a href="#变量声明提升" class="headerlink" title="变量声明提升"></a>变量声明提升</h3><ul><li>通过var定义声明的变量 在定义语句之前就可以访问到</li><li>值：undefined</li></ul><h3 id="函数声明提升"><a href="#函数声明提升" class="headerlink" title="函数声明提升"></a>函数声明提升</h3><ul><li>通过function声明的函数 在之前就可以调用</li><li>值：函数定义（对象）</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;变量声明提升&quot;&gt;&lt;a href=&quot;#变量声明提升&quot; class=&quot;headerlink&quot; title=&quot;变量声明提升&quot;&gt;&lt;/a&gt;变量声明提升&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;通过var定义声明的变量 在定义语句之前就可以访问到&lt;/li&gt;
+&lt;li&gt;值：undefined&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
