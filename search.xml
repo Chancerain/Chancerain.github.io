@@ -4,152 +4,25 @@
   
     
     <entry>
-      <title>对象高级</title>
-      <link href="/2022/02/13/%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7/"/>
-      <url>/2022/02/13/%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7/</url>
+      <title>Git</title>
+      <link href="/2022/02/13/Git/"/>
+      <url>/2022/02/13/Git/</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> JavaScript </category>
-          
-          <category> JS高级 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>函数高级</title>
-      <link href="/2022/02/13/%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7/"/>
-      <url>/2022/02/13/%E5%87%BD%E6%95%B0%E9%AB%98%E7%BA%A7/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>测试</title>
-      <link href="/2022/02/13/%E6%B5%8B%E8%AF%95-1/"/>
-      <url>/2022/02/13/%E6%B5%8B%E8%AF%95-1/</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="常见版本控制"><a href="#常见版本控制" class="headerlink" title="常见版本控制"></a>常见版本控制</h2><ul><li>集中版本控制  SVN</li><li>分布版本控制 Git</li></ul><h2 id="Git与SVN的主要区别"><a href="#Git与SVN的主要区别" class="headerlink" title="Git与SVN的主要区别"></a>Git与SVN的主要区别</h2><p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而工作的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，然后工作，完成工作后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，对网络带宽要求较高。</p><p>Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个完整的版本库，工作的时候不需要联网了，因为版本都在自己电脑上。协同的方法是这样的：比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。Git可以直接看到更新了哪些代码和文件！</p>]]></content>
       
       
       <categories>
           
-          <category> -测试 </category>
+          <category> 杂 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 测试 </tag>
-            
-            <tag> test </tag>
+            <tag> Git </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>测试</title>
-      <link href="/2022/02/12/%E6%B5%8B%E8%AF%95/"/>
-      <url>/2022/02/12/%E6%B5%8B%E8%AF%95/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2</title>
-      <link href="/2022/02/11/2/"/>
-      <url>/2022/02/11/2/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11</title>
-      <link href="/2022/02/11/11/"/>
-      <url>/2022/02/11/11/</url>
-      
-        <content type="html"><![CDATA[<hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr><hr><p>title: 11<br>date: 2022-02-11 08:13:18<br>tags:</p><hr>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2022/02/11/hello-world/"/>
-      <url>/2022/02/11/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/2022/02/11/03%20%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84this/"/>
-      <url>/2022/02/11/03%20%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84this/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/2022/02/11/02%20%E6%95%B0%E6%8D%AE%20%E5%8F%98%E9%87%8F%20%E5%86%85%E5%AD%98/"/>
-      <url>/2022/02/11/02%20%E6%95%B0%E6%8D%AE%20%E5%8F%98%E9%87%8F%20%E5%86%85%E5%AD%98/</url>
-      
-        <content type="html"><![CDATA[<h3 id="赋值和内存的问题"><a href="#赋值和内存的问题" class="headerlink" title="赋值和内存的问题"></a>赋值和内存的问题</h3><p>x是基本数据 内存中保存的这个数据</p><p>x是对象 内存中保存的是地址值</p><p>x是变量 内存中保存的是基本数据或地址值</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>变量提升和函数提升</title>
-      <link href="/2020/02/11/01%20%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E5%92%8C%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/"/>
-      <url>/2020/02/11/01%20%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E5%92%8C%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/</url>
-      
-        <content type="html"><![CDATA[<h3 id="变量声明提升"><a href="#变量声明提升" class="headerlink" title="变量声明提升"></a>变量声明提升</h3><ul><li>通过var定义声明的变量 在定义语句之前就可以访问到</li><li>值：undefined</li></ul><h3 id="函数声明提升"><a href="#函数声明提升" class="headerlink" title="函数声明提升"></a>函数声明提升</h3><ul><li>通过function声明的函数 在之前就可以调用</li><li>值：函数定义（对象）</li></ul>]]></content>
-      
-      
       
     </entry>
     
