@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-13T07:06:50.505Z</updated>
+  <updated>2022-02-13T09:02:37.669Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2022/02/13/Git/"/>
     <id>http://example.com/2022/02/13/Git/</id>
     <published>2022-02-13T06:57:52.000Z</published>
-    <updated>2022-02-13T07:06:50.505Z</updated>
+    <updated>2022-02-13T09:02:37.669Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="常见版本控制"><a href="#常见版本控制" class="headerlink" title="常见版本控制"></a>常见版本控制</h2><ul><li>集中版本控制  SVN</li><li>分布版本控制 Git</li></ul><h2 id="Git与SVN的主要区别"><a href="#Git与SVN的主要区别" class="headerlink" title="Git与SVN的主要区别"></a>Git与SVN的主要区别</h2><p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而工作的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，然后工作，完成工作后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，对网络带宽要求较高。</p><p>Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个完整的版本库，工作的时候不需要联网了，因为版本都在自己电脑上。协同的方法是这样的：比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。Git可以直接看到更新了哪些代码和文件！</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="常见版本控制"><a href="#常见版本控制" class="headerlink" title="常见版本控制"></a>常见版本控制</h2><ul><li>集中版本控制  SVN</li><li>分布版本控制 Git</li></ul><h2 id="Git与SVN的主要区别"><a href="#Git与SVN的主要区别" class="headerlink" title="Git与SVN的主要区别"></a>Git与SVN的主要区别</h2><p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而工作的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，然后工作，完成工作后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，对网络带宽要求较高。</p><p>Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个完整的版本库，工作的时候不需要联网了，因为版本都在自己电脑上。协同的方法是这样的：比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。Git可以直接看到更新了哪些代码和文件！</p><h2 id="Git基本理论"><a href="#Git基本理论" class="headerlink" title="Git基本理论"></a>Git基本理论</h2><h3 id="三个区域"><a href="#三个区域" class="headerlink" title="三个区域"></a>三个区域</h3><p>Git本地有三个工作区域：工作目录（Working Directory）、暂存区(Stage&#x2F;Index)、资源库(Repository或Git Directory)。如果在加上远程的git仓库(Remote Directory)就可以分为四个工作区域。</p><ul><li>Workspace：工作区，就是你平时存放项目代码的地方</li><li>Index &#x2F; Stage：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息</li><li>Repository：仓库区（或本地仓库），就是安全存放数据的位置，这里面有你提交到所有版本的数据。其中HEAD指向最新放入仓库的版本</li><li>Remote：远程仓库，托管代码的服务器，可以简单的认为是你项目组中的一台电脑用于远程数据交换</li></ul><h2 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><p>git的工作流程一般是这样的：</p><ol><li><p>在工作目录中添加、修改文件；</p></li><li><p>将需要进行版本管理的文件放入暂存区域；</p></li><li><p>将暂存区域的文件提交到git仓库。</p></li></ol><p>因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交(committed)</p><h2 id="Git项目搭建"><a href="#Git项目搭建" class="headerlink" title="Git项目搭建"></a>Git项目搭建</h2><h3 id="本地仓库搭建"><a href="#本地仓库搭建" class="headerlink" title="本地仓库搭建"></a>本地仓库搭建</h3><p>创建本地仓库的方法有两种：一种是创建全新的仓库，另一种是克隆远程仓库。</p><ol><li>创建全新的仓库，需要用GIT管理的项目的根目录执行：</li></ol><pre><code># 在当前目录新建一个Git代码库$ git init</code></pre><ol start="2"><li>执行后可以看到，仅仅在项目目录多出了一个.git目录，关于版本等的所有信息都在这个目录里面。</li></ol><h3 id="克隆远程仓库"><a href="#克隆远程仓库" class="headerlink" title="克隆远程仓库"></a>克隆远程仓库</h3><ul><li>另一种方式是克隆远程目录，由于是将远程服务器上的仓库完全镜像一份至本地！</li></ul><pre><code># 克隆一个项目和它的整个代码历史(版本信息)$ git clone [url]  </code></pre>]]></content>
     
     
       
