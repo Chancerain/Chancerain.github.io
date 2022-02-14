@@ -8,7 +8,7 @@
       <link href="/2022/02/14/DOM/"/>
       <url>/2022/02/14/DOM/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="DOM查询"><a href="#DOM查询" class="headerlink" title="DOM查询"></a>DOM查询</h2><h3 id="通过具体的元素节点来查询"><a href="#通过具体的元素节点来查询" class="headerlink" title="通过具体的元素节点来查询"></a>通过具体的元素节点来查询</h3><ul><li>element.getElementsByTagName()</li><li>element.childNodes</li><li>element.firstChild</li><li>element.lastChild</li><li>element.parentNode</li><li>element.previousSibling</li><li>element.nextSibling</li></ul><h3 id="document对象的其他的属性和方法"><a href="#document对象的其他的属性和方法" class="headerlink" title="document对象的其他的属性和方法"></a>document对象的其他的属性和方法</h3><ul><li><p>document.all</p></li><li><p>document.documentElement</p></li><li><p>document.body</p></li><li><p>document.getElementsByClassName()</p></li><li><p>document.querySelector()</p><p>返回第一个元素</p></li><li><p>document.querySelectorAll()</p><p>返回数组</p></li></ul>]]></content>
       
       
       <categories>
