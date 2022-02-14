@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Node</title>
+      <link href="/2022/02/14/Node/"/>
+      <url>/2022/02/14/Node/</url>
+      
+        <content type="html"><![CDATA[<h2 id="创建最基本的web服务器"><a href="#创建最基本的web服务器" class="headerlink" title="创建最基本的web服务器"></a>创建最基本的web服务器</h2><h3 id="创建web服务器的基本步骤"><a href="#创建web服务器的基本步骤" class="headerlink" title="创建web服务器的基本步骤"></a>创建web服务器的基本步骤</h3><ol><li>导入 http 模块</li><li>创建 web 服务器实例</li><li>为服务器实例绑定 <strong>request</strong> 事件，监听客户端的请求</li><li>启动服务器</li></ol><h3 id="导入http模块"><a href="#导入http模块" class="headerlink" title="导入http模块"></a>导入http模块</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Node.js </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> Node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DOM</title>
       <link href="/2022/02/14/DOM/"/>
       <url>/2022/02/14/DOM/</url>

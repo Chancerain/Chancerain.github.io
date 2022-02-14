@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-14T03:02:47.624Z</updated>
+  <updated>2022-02-14T07:41:13.141Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Node</title>
+    <link href="http://example.com/2022/02/14/Node/"/>
+    <id>http://example.com/2022/02/14/Node/</id>
+    <published>2022-02-14T07:25:19.000Z</published>
+    <updated>2022-02-14T07:41:13.141Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建最基本的web服务器"><a href="#创建最基本的web服务器" class="headerlink" title="创建最基本的web服务器"></a>创建最基本的web服务器</h2><h3 id="创建web服务器的基本步骤"><a href="#创建web服务器的基本步骤" class="headerlink" title="创建web服务器的基本步骤"></a>创建web服务器的基本步骤</h3><ol><li>导入 http 模块</li><li>创建 web 服务器实例</li><li>为服务器实例绑定 <strong>request</strong> 事件，监听客户端的请求</li><li>启动服务器</li></ol><h3 id="导入http模块"><a href="#导入http模块" class="headerlink" title="导入http模块"></a>导入http模块</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;创建最基本的web服务器&quot;&gt;&lt;a href=&quot;#创建最基本的web服务器&quot; class=&quot;headerlink&quot; title=&quot;创建最基本的web服务器&quot;&gt;&lt;/a&gt;创建最基本的web服务器&lt;/h2&gt;&lt;h3 id=&quot;创建web服务器的基本步骤&quot;&gt;&lt;a href=&quot;#</summary>
+      
+    
+    
+    
+    <category term="Node.js" scheme="http://example.com/categories/Node-js/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+    <category term="Node.js" scheme="http://example.com/tags/Node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>DOM</title>
