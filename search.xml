@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>BOM</title>
+      <link href="/2022/02/16/BOM/"/>
+      <url>/2022/02/16/BOM/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>事件</title>
       <link href="/2022/02/16/%E4%BA%8B%E4%BB%B6/"/>
       <url>/2022/02/16/%E4%BA%8B%E4%BB%B6/</url>
       
-        <content type="html"><![CDATA[<h2 id="事件处理程序"><a href="#事件处理程序" class="headerlink" title="事件处理程序"></a>事件处理程序</h2><ol><li><p>通过DOM对象指定的属性来绑定</p><pre class=" language-js"><code class="language-js">btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span> <span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></li><li><p>通过HTML元素指定事件属性来绑定</p><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>btn<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span></code></pre></li></ol><h2 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h2><ul><li>当响应函数被调用时，浏览器每次都会将一个事件对象作为实参传递进响应函数中，这个事件对象中封装了当前事件的相关信息，比如：鼠标的坐标，键盘的按键，鼠标的按键，滚轮的方向。</li></ul><h2 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h2><ul><li>事件的冒泡指的是事件向上传导，当后代元素上的事件被触发时，将会导致其祖先元素上的同类事件也会触发。</li><li>可以将事件对象的cancelBubble设置为true，即可取消冒泡</li></ul><h2 id="事件传播"><a href="#事件传播" class="headerlink" title="事件传播"></a>事件传播</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bbsxiaomi.com/images/202110/1634211541116099.png" alt="事件的传播_捕获|目标|冒泡阶段的说明及转换_事件委托/事件代理_原生JS-小米技术社区"></p><ol><li><p>捕获阶段 </p><p>这一阶段会从window对象开始向下一直遍历到目标对象，如果发现有对 象绑定了响应事件则做相应的处理。</p></li><li><p>目标阶段<br>这一阶段已经遍历结束，则会执行目标对象上绑定的响应函数。 </p></li><li><p>事件冒泡阶段<br>这一阶段，事件的传播方式和捕获阶段正好相反，会从事件目标一直向 上遍历，直至window对象结束，这时对象上绑定的响应函数也会执行。</p></li></ol><ul><li><p>取消传播</p><ul><li><p>我们可以使用event对象的两个方法完成：</p><p>stopPropagation()</p><p>stopImmediatePropagation() </p></li><li><p>取消默认行为： </p><p>preventDefault()</p></li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="事件处理程序"><a href="#事件处理程序" class="headerlink" title="事件处理程序"></a>事件处理程序</h2><ol><li><p>通过DOM对象指定的属性来绑定</p><pre class=" language-js"><code class="language-js">btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span> <span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></li><li><p>通过HTML元素指定事件属性来绑定</p><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>btn<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></li></ol><h2 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h2><ul><li>当响应函数被调用时，浏览器每次都会将一个事件对象作为实参传递进响应函数中，这个事件对象中封装了当前事件的相关信息，比如：鼠标的坐标，键盘的按键，鼠标的按键，滚轮的方向。</li></ul><h2 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h2><ul><li>事件的冒泡指的是事件向上传导，当后代元素上的事件被触发时，将会导致其祖先元素上的同类事件也会触发。</li><li>可以将事件对象的cancelBubble设置为true，即可取消冒泡</li></ul><h2 id="事件传播"><a href="#事件传播" class="headerlink" title="事件传播"></a>事件传播</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bbsxiaomi.com/images/202110/1634211541116099.png" alt="事件的传播_捕获|目标|冒泡阶段的说明及转换_事件委托/事件代理_原生JS-小米技术社区"></p><ol><li><p>捕获阶段 </p><p>这一阶段会从window对象开始向下一直遍历到目标对象，如果发现有对 象绑定了响应事件则做相应的处理。</p></li><li><p>目标阶段<br>这一阶段已经遍历结束，则会执行目标对象上绑定的响应函数。 </p></li><li><p>事件冒泡阶段<br>这一阶段，事件的传播方式和捕获阶段正好相反，会从事件目标一直向 上遍历，直至window对象结束，这时对象上绑定的响应函数也会执行。</p></li></ol><ul><li><p>取消传播</p><ul><li><p>我们可以使用event对象的两个方法完成：</p><p>stopPropagation()</p><p>stopImmediatePropagation() </p></li><li><p>取消默认行为： </p><p>preventDefault()</p></li></ul></li></ul>]]></content>
       
       
       <categories>
