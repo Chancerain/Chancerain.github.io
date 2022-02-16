@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-16T10:15:30.583Z</updated>
+  <updated>2022-02-16T10:24:26.684Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/02/16/%E5%8E%9F%E5%9E%8B/"/>
     <id>http://example.com/2022/02/16/%E5%8E%9F%E5%9E%8B/</id>
     <published>2022-02-16T10:13:16.000Z</published>
-    <updated>2022-02-16T10:15:30.583Z</updated>
+    <updated>2022-02-16T10:24:26.684Z</updated>
     
     
     
@@ -40,7 +40,7 @@
     <link href="http://example.com/2022/02/16/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     <id>http://example.com/2022/02/16/%E4%BD%9C%E7%94%A8%E5%9F%9F/</id>
     <published>2022-02-16T10:11:31.000Z</published>
-    <updated>2022-02-16T10:15:37.662Z</updated>
+    <updated>2022-02-16T10:24:30.558Z</updated>
     
     
     
@@ -59,7 +59,7 @@
     <link href="http://example.com/2022/02/16/%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     <id>http://example.com/2022/02/16/%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
     <published>2022-02-16T10:11:16.000Z</published>
-    <updated>2022-02-16T10:18:01.270Z</updated>
+    <updated>2022-02-16T10:24:22.965Z</updated>
     
     
     
@@ -133,7 +133,7 @@
     <link href="http://example.com/2022/02/14/Node/"/>
     <id>http://example.com/2022/02/14/Node/</id>
     <published>2022-02-14T07:25:19.000Z</published>
-    <updated>2022-02-14T07:41:13.141Z</updated>
+    <updated>2022-02-16T10:24:39.083Z</updated>
     
     <content type="html"><![CDATA[<h2 id="创建最基本的web服务器"><a href="#创建最基本的web服务器" class="headerlink" title="创建最基本的web服务器"></a>创建最基本的web服务器</h2><h3 id="创建web服务器的基本步骤"><a href="#创建web服务器的基本步骤" class="headerlink" title="创建web服务器的基本步骤"></a>创建web服务器的基本步骤</h3><ol><li>导入 http 模块</li><li>创建 web 服务器实例</li><li>为服务器实例绑定 <strong>request</strong> 事件，监听客户端的请求</li><li>启动服务器</li></ol><h3 id="导入http模块"><a href="#导入http模块" class="headerlink" title="导入http模块"></a>导入http模块</h3>]]></content>
     
