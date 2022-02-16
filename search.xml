@@ -31,33 +31,6 @@
     
     
     <entry>
-      <title>字符串</title>
-      <link href="/2022/02/16/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-      <url>/2022/02/16/%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> JavaScript </category>
-          
-          <category> JS基础 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> JavaScript </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>作用域</title>
       <link href="/2022/02/16/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
       <url>/2022/02/16/%E4%BD%9C%E7%94%A8%E5%9F%9F/</url>
@@ -85,9 +58,9 @@
     
     
     <entry>
-      <title>数组</title>
-      <link href="/2022/02/16/%E6%95%B0%E7%BB%84/"/>
-      <url>/2022/02/16/%E6%95%B0%E7%BB%84/</url>
+      <title>数组与字符串</title>
+      <link href="/2022/02/16/%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+      <url>/2022/02/16/%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
       
         <content type="html"><![CDATA[]]></content>
       

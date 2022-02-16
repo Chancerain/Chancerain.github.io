@@ -36,25 +36,6 @@
   </entry>
   
   <entry>
-    <title>字符串</title>
-    <link href="http://example.com/2022/02/16/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://example.com/2022/02/16/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
-    <published>2022-02-16T10:11:59.000Z</published>
-    <updated>2022-02-16T10:15:33.523Z</updated>
-    
-    
-    
-    
-    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
-    
-    <category term="JS基础" scheme="http://example.com/categories/JavaScript/JS%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>作用域</title>
     <link href="http://example.com/2022/02/16/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     <id>http://example.com/2022/02/16/%E4%BD%9C%E7%94%A8%E5%9F%9F/</id>
@@ -74,11 +55,11 @@
   </entry>
   
   <entry>
-    <title>数组</title>
-    <link href="http://example.com/2022/02/16/%E6%95%B0%E7%BB%84/"/>
-    <id>http://example.com/2022/02/16/%E6%95%B0%E7%BB%84/</id>
+    <title>数组与字符串</title>
+    <link href="http://example.com/2022/02/16/%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>http://example.com/2022/02/16/%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
     <published>2022-02-16T10:11:16.000Z</published>
-    <updated>2022-02-16T10:15:26.011Z</updated>
+    <updated>2022-02-16T10:18:01.270Z</updated>
     
     
     
