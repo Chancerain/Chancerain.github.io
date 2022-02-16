@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-16T09:50:10.207Z</updated>
+  <updated>2022-02-16T10:15:30.583Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>原型</title>
+    <link href="http://example.com/2022/02/16/%E5%8E%9F%E5%9E%8B/"/>
+    <id>http://example.com/2022/02/16/%E5%8E%9F%E5%9E%8B/</id>
+    <published>2022-02-16T10:13:16.000Z</published>
+    <updated>2022-02-16T10:15:30.583Z</updated>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="JS基础" scheme="http://example.com/categories/JavaScript/JS%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字符串</title>
+    <link href="http://example.com/2022/02/16/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>http://example.com/2022/02/16/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <published>2022-02-16T10:11:59.000Z</published>
+    <updated>2022-02-16T10:15:33.523Z</updated>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="JS基础" scheme="http://example.com/categories/JavaScript/JS%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>作用域</title>
+    <link href="http://example.com/2022/02/16/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+    <id>http://example.com/2022/02/16/%E4%BD%9C%E7%94%A8%E5%9F%9F/</id>
+    <published>2022-02-16T10:11:31.000Z</published>
+    <updated>2022-02-16T10:15:37.662Z</updated>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="JS基础" scheme="http://example.com/categories/JavaScript/JS%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数组</title>
+    <link href="http://example.com/2022/02/16/%E6%95%B0%E7%BB%84/"/>
+    <id>http://example.com/2022/02/16/%E6%95%B0%E7%BB%84/</id>
+    <published>2022-02-16T10:11:16.000Z</published>
+    <updated>2022-02-16T10:15:26.011Z</updated>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="JS基础" scheme="http://example.com/categories/JavaScript/JS%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>BOM</title>
@@ -128,8 +204,15 @@
     <link href="http://example.com/2022/02/14/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97/"/>
     <id>http://example.com/2022/02/14/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97/</id>
     <published>2022-02-13T22:50:13.000Z</published>
-    <updated>2022-02-16T09:59:01.669Z</updated>
+    <updated>2022-02-16T10:00:21.911Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;类型转换&quot;&gt;&lt;a href=&quot;#类型转换&quot; class=&quot;headerlink&quot; title=&quot;类型转换&quot;&gt;&lt;/a&gt;类型转换&lt;/h2&gt;</summary>
+      
     
     
     
