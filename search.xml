@@ -8,12 +8,14 @@
       <link href="/2022/02/16/BOM/"/>
       <url>/2022/02/16/BOM/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="BOM对象"><a href="#BOM对象" class="headerlink" title="BOM对象"></a>BOM对象</h2><p>BOM对象在浏览器中作为window对象的属性保存，可以通过window对象来使用，也可以直接使用。</p><ul><li><p>Window</p><p>代表的是整个浏览器的窗口，同时window也是网页中的全局对象</p></li><li><p>Navigator</p><p>代表的当前浏览器的信息，通过该对象可以来识别不同的浏览器</p></li><li><p>Location</p><p>代表当前浏览器的地址栏信息，通过Location可以获取地址栏信息，或者操作浏览器跳转页面</p></li><li><p>History</p><p>代表浏览器的历史记录，可以通过该对象来操作浏览器的历史记录，该对象不能获取到具体的历史记录，只能操作浏览器向前或向后翻页，该操作只在当次访问时有效</p></li><li><p>Screen</p><p>代表用户的屏幕的信息，通过该对象可以获取到用户的显示器的相关的信息</p></li></ul><h3 id="Navigator"><a href="#Navigator" class="headerlink" title="Navigator"></a>Navigator</h3><p>一般我们只会使用userAgent来判断浏览器的信息， userAgent是一个字符串，这个字符串中包含有用来描述浏览器信息的内容，不同的浏览器会有不同的userAgent</p><h3 id="History"><a href="#History" class="headerlink" title="History"></a>History</h3><ul><li>length</li><li>back()</li><li>forward()</li><li>go()</li></ul><h3 id="Location"><a href="#Location" class="headerlink" title="Location"></a>Location</h3><p>如果直接打印location，则可以获取到地址栏的信息（当前页面的完整路径）；如果直接将location属性修改为一个完整的路径，或相对路径，则我们页面会自动跳转到该路径，并且会生成相应的历史记录</p><ul><li><p>assign()</p><p>用来跳转到其他的页面，作用和直接修改location一样</p></li><li><p>reload()</p><p>用于重新加载当前页面，作用和刷新按钮一样</p><p>如果在方法中传递一个true，作为参数，则会强制清空缓存刷新页面</p></li><li><p>replace()</p><p>可以使用一个新的页面替换当前页面，调用完毕也会跳转页面</p><p>不会生成历史记录，不能使用回退按钮回退</p></li></ul><h2 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h2><h3 id="定时调用"><a href="#定时调用" class="headerlink" title="定时调用"></a>定时调用</h3><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>           count<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> num<span class="token operator">++</span><span class="token punctuation">;</span>        <span class="token keyword">if</span><span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">{</span>            <span class="token function">clearInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>clearInterval() 可以用来关闭一个定时器，方法中需要一个定时器的标识作为参数，这样将关闭标识对应的定时器</p><p>clearInterval(timer);</p><h3 id="延时调用"><a href="#延时调用" class="headerlink" title="延时调用"></a>延时调用</h3><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>使用clearTimeout()来关闭一个延时调用</p>]]></content>
       
       
       <categories>
           
           <category> JavaScript </category>
+          
+          <category> JS基础 </category>
           
       </categories>
       
@@ -110,9 +112,9 @@
     
     
     <entry>
-      <title>JS基础</title>
-      <link href="/2022/02/14/JS%E5%9F%BA%E7%A1%80/"/>
-      <url>/2022/02/14/JS%E5%9F%BA%E7%A1%80/</url>
+      <title>数据类型与运算</title>
+      <link href="/2022/02/14/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97/"/>
+      <url>/2022/02/14/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97/</url>
       
         <content type="html"><![CDATA[]]></content>
       
