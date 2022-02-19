@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-19T02:33:07.979Z</updated>
+  <updated>2022-02-19T05:24:17.575Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://example.com/2022/02/19/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2022/02/19/%E6%B5%8B%E8%AF%95/</id>
+    <published>2022-02-19T05:24:07.000Z</published>
+    <updated>2022-02-19T05:24:17.575Z</updated>
+    
+    <content type="html"><![CDATA[<p>是直接传递函数的实参而apply需要将实参封装到一个数组中传递</p><h2 id="arguments"><a href="#arguments" class="headerlink" title="arguments"></a>arguments</h2><p>arguments和this类似，都是函数中的隐是直接传递函数的实参而apply需要将实参封装到一个数组中传递</p><h2 id="arguments-1"><a href="#arguments-1" class="headerlink" title="arguments"></a>arguments</h2><p>arguments和this类似，都是函数中的隐是直接传递函数的实参而apply需要将实参封装到一个数组中传递</p><h2 id="arguments-2"><a href="#arguments-2" class="headerlink" title="arguments"></a>arguments</h2><p>arguments和this类似，都是函数中的隐是直接传递函数的实参而apply需要将实参封装到一个数组中传递</p><h2 id="arguments-3"><a href="#arguments-3" class="headerlink" title="arguments"></a>arguments</h2><p>arguments和this类似，都是函数中的隐是直接传递函数的实参而apply需要将实参封装到一个数组中传递</p><h2 id="arguments-4"><a href="#arguments-4" class="headerlink" title="arguments"></a>arguments</h2><p>arguments和this类似，都是函数中的隐是直接传递函数的实参而apply需要将实参封装到一个数组中传递</p><h2 id="arguments-5"><a href="#arguments-5" class="headerlink" title="arguments"></a>arguments</h2><p>arguments和this类似，都是函数中的隐是直接传递函数的实参而apply需要将实参封装到一个数组中传递</p><h2 id="arguments-6"><a href="#arguments-6" class="headerlink" title="arguments"></a>arguments</h2><p>arguments和this类似，都是函数中的隐是直接传递函数的实参而apply需要将实参封装到一个数组中传递</p><h2 id="arguments-7"><a href="#arguments-7" class="headerlink" title="arguments"></a>arguments</h2><p>arguments和this类似，都是函数中的隐</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;是直接传递函数的实参而apply需要将实参封装到一个数组中传递&lt;/p&gt;
+&lt;h2 id=&quot;arguments&quot;&gt;&lt;a href=&quot;#arguments&quot; class=&quot;headerlink&quot; title=&quot;arguments&quot;&gt;&lt;/a&gt;arguments&lt;/h2&gt;&lt;p&gt;arg</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>jQuery补充知识点</title>
