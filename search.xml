@@ -4,6 +4,119 @@
   
     
     <entry>
+      <title>节点操作</title>
+      <link href="/2022/02/19/%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/02/19/%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>动画</title>
+      <link href="/2022/02/19/%E5%8A%A8%E7%94%BB/"/>
+      <url>/2022/02/19/%E5%8A%A8%E7%94%BB/</url>
+      
+        <content type="html"><![CDATA[<h2 id="基本动画"><a href="#基本动画" class="headerlink" title="基本动画"></a>基本动画</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*注意：动画的本质是改变容器的大小和透明度*/</span></span><br><span class="line"><span class="comment">/*注意：如果不传参数是看不到动画*/</span></span><br><span class="line"><span class="comment">/*注意：可传入特殊的字符  fast normal slow*/</span></span><br><span class="line"><span class="comment">/*注意：可传入数字 单位毫秒*/</span></span><br><span class="line"><span class="comment">/*1.展示动画*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">show</span>();</span><br><span class="line"><span class="comment">/*2.隐藏动画*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">hide</span>();</span><br><span class="line"><span class="comment">/*3.切换展示和隐藏*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">toggle</span>();</span><br></pre></td></tr></table></figure><h2 id="划入划出"><a href="#划入划出" class="headerlink" title="划入划出"></a>划入划出</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*注意：动画的本质是改变容器的高度*/</span></span><br><span class="line"><span class="comment">/*1.滑入动画*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">slideDown</span>();</span><br><span class="line"><span class="comment">/*2.滑出动画*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">slideUp</span>();</span><br><span class="line"><span class="comment">/*3.切换滑入滑出*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">slideToggle</span>();</span><br></pre></td></tr></table></figure><h2 id="淡入淡出"><a href="#淡入淡出" class="headerlink" title="淡入淡出"></a>淡入淡出</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*注意：动画的本质是改变容器的透明度*/</span></span><br><span class="line"><span class="comment">/*1.淡入动画*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">fadeIn</span>();</span><br><span class="line"><span class="comment">/*2.淡出动画*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">fadeOut</span>();</span><br><span class="line"><span class="comment">/*3.切换淡入淡出*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">fadeToggle</span>();</span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">fadeTo</span>(<span class="string">&#x27;speed&#x27;</span>,<span class="string">&#x27;opacity&#x27;</span>);</span><br></pre></td></tr></table></figure><h2 id="自定义动画"><a href="#自定义动画" class="headerlink" title="自定义动画"></a>自定义动画</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 自定义动画</span></span><br><span class="line"><span class="comment">* 参数1：需要做动画的属性</span></span><br><span class="line"><span class="comment">* 参数2：需要执行动画的总时长</span></span><br><span class="line"><span class="comment">* 参数3：执行动画的时候的速度</span></span><br><span class="line"><span class="comment">* 参数4：执行动画完成之后的回调函数</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line">$(<span class="string">&#x27;#box1&#x27;</span>).<span class="title function_">animate</span>(&#123;<span class="attr">left</span>:<span class="number">800</span>&#125;,<span class="number">5000</span>);</span><br><span class="line">$(<span class="string">&#x27;#box2&#x27;</span>).<span class="title function_">animate</span>(&#123;<span class="attr">left</span>:<span class="number">800</span>&#125;,<span class="number">5000</span>,<span class="string">&#x27;linear&#x27;</span>);</span><br><span class="line">$(<span class="string">&#x27;#box3&#x27;</span>).<span class="title function_">animate</span>(&#123;<span class="attr">left</span>:<span class="number">800</span>&#125;,<span class="number">5000</span>,<span class="string">&#x27;swing&#x27;</span>,<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;动画执行完成&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="stop使用"><a href="#stop使用" class="headerlink" title="stop使用"></a>stop使用</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*1.停止当前动画  如果动画队列当中还有动画立即执行*/</span></span><br><span class="line"><span class="comment">//$(&#x27;div&#x27;).stop();</span></span><br><span class="line"><span class="comment">/*2.和stop()效果一致  说明这是默认设置*/</span></span><br><span class="line"><span class="comment">//$(&#x27;div&#x27;).stop(false,false);</span></span><br><span class="line"><span class="comment">/*3.停止当前动画  清除动画队列*/</span></span><br><span class="line"><span class="comment">//$(&#x27;div&#x27;).stop(true,false);</span></span><br><span class="line"><span class="comment">/*4.停止当前动画并且到结束位置  清除了动画队列*/</span></span><br><span class="line"><span class="comment">//$(&#x27;div&#x27;).stop(true,true);</span></span><br><span class="line"><span class="comment">/*5.停止当前动画并且到结束位置  如果动画队列当中还有动画立即执行*/</span></span><br><span class="line">$(<span class="string">&#x27;div&#x27;</span>).<span class="title function_">stop</span>(<span class="literal">false</span>,<span class="literal">true</span>);</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> jQuery </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jQuery </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>元素设置</title>
+      <link href="/2022/02/19/%E5%85%83%E7%B4%A0%E8%AE%BE%E7%BD%AE/"/>
+      <url>/2022/02/19/%E5%85%83%E7%B4%A0%E8%AE%BE%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="样式设置"><a href="#样式设置" class="headerlink" title="样式设置"></a>样式设置</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*1.设置一个样式*/</span></span><br><span class="line"><span class="comment">//两个参数  设置的样式属性,具体样式</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">css</span>(<span class="string">&#x27;color&#x27;</span>,<span class="string">&#x27;red&#x27;</span>);</span><br><span class="line"><span class="comment">//传入对象（设置的样式属性:具体样式）</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">css</span>(&#123;<span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;red&#x27;</span>&#125;);</span><br><span class="line"><span class="comment">/*2.设置多个样式*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">css</span>(&#123;</span><br><span class="line">    <span class="string">&#x27;color&#x27;</span>:<span class="string">&#x27;green&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;font-size&#x27;</span>:<span class="string">&#x27;20px&#x27;</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="类名设置"><a href="#类名设置" class="headerlink" title="类名设置"></a>类名设置</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*1.添加一个类*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">addClass</span>(<span class="string">&#x27;now&#x27;</span>);</span><br><span class="line"><span class="comment">/*2.删除一个类*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">removeClass</span>(<span class="string">&#x27;now&#x27;</span>);</span><br><span class="line"><span class="comment">/*3.切换一个类  有就删除没有就添加*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">toggleClass</span>(<span class="string">&#x27;now&#x27;</span>);</span><br><span class="line"><span class="comment">/*4.匹配一个类  判断是否包含某个类  如果包含返回true否知返回false*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">hasClass</span>(<span class="string">&#x27;now&#x27;</span>);</span><br></pre></td></tr></table></figure><h2 id="属性设置"><a href="#属性设置" class="headerlink" title="属性设置"></a>属性设置</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*1.获取属性*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">attr</span>(<span class="string">&#x27;name&#x27;</span>);</span><br><span class="line"><span class="comment">/*2.设置属性*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">attr</span>(<span class="string">&#x27;name&#x27;</span>,<span class="string">&#x27;tom&#x27;</span>);</span><br><span class="line"><span class="comment">/*3.设置多个属性*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">attr</span>(&#123;</span><br><span class="line">    <span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;tom&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;age&#x27;</span>:<span class="string">&#x27;18&#x27;</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">/*4.删除属性*/</span></span><br><span class="line">$(<span class="string">&#x27;li&#x27;</span>).<span class="title function_">removeAttr</span>(<span class="string">&#x27;name&#x27;</span>);</span><br></pre></td></tr></table></figure><h2 id="prop方法"><a href="#prop方法" class="headerlink" title="prop方法"></a>prop方法</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*对于布尔类型的属性，不要attr方法，应该用prop方法 prop用法跟attr方法一样。*/</span></span><br><span class="line">$(<span class="string">&quot;#checkbox&quot;</span>).<span class="title function_">prop</span>(<span class="string">&quot;checked&quot;</span>);</span><br><span class="line">$(<span class="string">&quot;#checkbox&quot;</span>).<span class="title function_">prop</span>(<span class="string">&quot;checked&quot;</span>, <span class="literal">true</span>);</span><br><span class="line">$(<span class="string">&quot;#checkbox&quot;</span>).<span class="title function_">prop</span>(<span class="string">&quot;checked&quot;</span>, <span class="literal">false</span>);</span><br><span class="line">$(<span class="string">&quot;#checkbox&quot;</span>).<span class="title function_">removeProp</span>(<span class="string">&quot;checked&quot;</span>);</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> jQuery </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jQuery </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>jQuery选择器</title>
+      <link href="/2022/02/19/jQuery%E9%80%89%E6%8B%A9%E5%99%A8/"/>
+      <url>/2022/02/19/jQuery%E9%80%89%E6%8B%A9%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s3.bmp.ovh/imgs/2022/02/ba3ea323ac992a29.png"></p><h2 id="层级选择器"><a href="#层级选择器" class="headerlink" title="层级选择器"></a>层级选择器</h2><img src = 'https://s3.bmp.ovh/imgs/2022/02/2e44736dce0033bc.png' /><h2 id="过滤选择器"><a href="#过滤选择器" class="headerlink" title="过滤选择器"></a>过滤选择器</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s3.bmp.ovh/imgs/2022/02/ce722592c6d6c53b.png"></p><h2 id="筛选选择器-方法"><a href="#筛选选择器-方法" class="headerlink" title="筛选选择器(方法)"></a>筛选选择器(方法)</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s3.bmp.ovh/imgs/2022/02/566331ae4b2640cf.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> jQuery </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jQuery </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>jQuery入门</title>
+      <link href="/2022/02/19/jQuery%E5%85%A5%E9%97%A8/"/>
+      <url>/2022/02/19/jQuery%E5%85%A5%E9%97%A8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="jquery的入口函数"><a href="#jquery的入口函数" class="headerlink" title="jquery的入口函数"></a>jquery的入口函数</h2><h3 id="使用jQuery的三个步骤："><a href="#使用jQuery的三个步骤：" class="headerlink" title="使用jQuery的三个步骤："></a>使用jQuery的三个步骤：</h3><ol><li>引入jQuery文件</li><li>入口函数</li><li>功能实现</li></ol><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//第二种写法</span></span><br><span class="line">$(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h3 id="jQuery入口函数与js入口函数的对比"><a href="#jQuery入口函数与js入口函数的对比" class="headerlink" title="jQuery入口函数与js入口函数的对比"></a>jQuery入口函数与js入口函数的对比</h3><ol><li>JavaScript的入口函数要等到页面中所有资源（包括图片、文件）加载完成才开始执行。</li><li>jQuery的入口函数只会等待文档树加载完成就开始执行，并不会等待图片、文件的加载。</li></ol><h2 id="jQuery对象和DOM对象-重要"><a href="#jQuery对象和DOM对象-重要" class="headerlink" title="jQuery对象和DOM对象(重要)"></a>jQuery对象和DOM对象(重要)</h2><ol><li>DOM对象：使用JavaScript中的方法获取页面中的元素返回的对象就是DOM对象。</li><li>jQuery对象：jQuery对象就是使用jQuery的方法获取页面中的元素返回的对象就是jQuery对象。</li><li>jQuery对象其实就是DOM对象的包装集，包装了DOM对象的集合（伪数组）。</li><li>DOM对象与jQuery对象的方法不能混用。</li></ol><h3 id="DOM对象转换成jQuery对象"><a href="#DOM对象转换成jQuery对象" class="headerlink" title="DOM对象转换成jQuery对象"></a>DOM对象转换成jQuery对象</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $obj = $(domObj);</span><br></pre></td></tr></table></figure><h3 id="jQuery对象转换成DOM对象"><a href="#jQuery对象转换成DOM对象" class="headerlink" title="jQuery对象转换成DOM对象"></a>jQuery对象转换成DOM对象</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $li = $(<span class="string">&quot;li&quot;</span>);</span><br><span class="line"><span class="comment">//第一种方法（推荐使用）</span></span><br><span class="line">$li[<span class="number">0</span>]</span><br><span class="line"><span class="comment">//第二种方法</span></span><br><span class="line">$li.<span class="title function_">get</span>(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> jQuery </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jQuery </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>函数</title>
       <link href="/2022/02/17/%E5%87%BD%E6%95%B0/"/>
       <url>/2022/02/17/%E5%87%BD%E6%95%B0/</url>
