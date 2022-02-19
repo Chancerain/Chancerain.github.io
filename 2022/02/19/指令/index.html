@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>指令 | Chancerain</title><meta name="keywords" content="Vue"><meta name="author" content="Chancerain"><meta name="copyright" content="Chancerain"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="v-text 更新DOM对象的 textContent  1&lt;h1 v-text&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;  v-html 解释：更新DOM对象的 innerHTML  1&lt;h1 v-html&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;  v-bind 作用：当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM 语法：v-">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>指令 | Chancerain</title><meta name="keywords" content="Vue"><meta name="author" content="Chancerain"><meta name="copyright" content="Chancerain"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="v-text 更新DOM对象的 textContent  &lt;h1 v-text&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;  v-html 解释：更新DOM对象的 innerHTML  &lt;h1 v-html&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;  v-bind 作用：当表达式的值改变时，将其产生的连带影响">
 <meta property="og:type" content="article">
 <meta property="og:title" content="指令">
 <meta property="og:url" content="http://example.com/2022/02/19/%E6%8C%87%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Chancerain">
-<meta property="og:description" content="v-text 更新DOM对象的 textContent  1&lt;h1 v-text&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;  v-html 解释：更新DOM对象的 innerHTML  1&lt;h1 v-html&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;  v-bind 作用：当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM 语法：v-">
+<meta property="og:description" content="v-text 更新DOM对象的 textContent  &lt;h1 v-text&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;  v-html 解释：更新DOM对象的 innerHTML  &lt;h1 v-html&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;  v-bind 作用：当表达式的值改变时，将其产生的连带影响">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://miro.medium.com/max/1400/1*vj-6rx5pN8aoQcbs_z0CKw.jpeg">
 <meta property="article:published_time" content="2022-02-19T13:35:31.000Z">
@@ -17,7 +17,7 @@
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
   translate: undefined,
   noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
     success: '复制成功',
     error: '复制错误',
@@ -161,23 +161,26 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Chancerain" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/favicon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://miro.medium.com/max/1400/1*vj-6rx5pN8aoQcbs_z0CKw.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Chancerain</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">指令</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-02-19T13:35:31.000Z" title="发表于 2022-02-19 21:35:31">2022-02-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-19T14:06:45.411Z" title="更新于 2022-02-19 22:06:45">2022-02-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Vue/">Vue</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Vue/Vue%E5%9F%BA%E7%A1%80/">Vue基础</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">900</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="指令"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="v-text"><a href="#v-text" class="headerlink" title="v-text"></a>v-text</h2><ul>
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="Chancerain" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/favicon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://miro.medium.com/max/1400/1*vj-6rx5pN8aoQcbs_z0CKw.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Chancerain</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">指令</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-02-19T13:35:31.000Z" title="发表于 2022-02-19 21:35:31">2022-02-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-19T14:06:45.411Z" title="更新于 2022-02-19 22:06:45">2022-02-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Vue/">Vue</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Vue/Vue%E5%9F%BA%E7%A1%80/">Vue基础</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">942</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="指令"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="v-text"><a href="#v-text" class="headerlink" title="v-text"></a>v-text</h2><ul>
 <li>更新DOM对象的 textContent</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 v-text=&quot;msg&quot;&gt;&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;h1 v-text&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h2 id="v-html"><a href="#v-html" class="headerlink" title="v-html"></a>v-html</h2><ul>
 <li>解释：更新DOM对象的 innerHTML</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 v-html=&quot;msg&quot;&gt;&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;h1 v-html&#x3D;&quot;msg&quot;&gt;&lt;&#x2F;h1&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h2 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h2><ul>
 <li>作用：当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM</li>
 <li>语法：<code>v-bind:title=&quot;msg&quot;</code></li>
 <li>简写：<code>:title=&quot;msg&quot;</code></li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 完整语法 --&gt;</span><br><span class="line">&lt;a v-bind:href=&quot;url&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;!-- 缩写 --&gt;</span><br><span class="line">&lt;a :href=&quot;url&quot;&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;!-- 完整语法 --&gt;
+&lt;a v-bind:href&#x3D;&quot;url&quot;&gt;&lt;&#x2F;a&gt;
+&lt;!-- 缩写 --&gt;
+&lt;a :href&#x3D;&quot;url&quot;&gt;&lt;&#x2F;a&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="v-on"><a href="#v-on" class="headerlink" title="v-on"></a>v-on</h2><ul>
 <li>作用：绑定事件</li>
@@ -185,7 +188,10 @@
 <li>简写：<code>@click=&quot;say&quot;</code></li>
 <li>说明：绑定的事件定义在<code>methods</code></li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 完整语法 --&gt;</span><br><span class="line">&lt;a v-on:click=&quot;doSomething&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;!-- 缩写 --&gt;</span><br><span class="line">&lt;a @click=&quot;doSomething&quot;&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;!-- 完整语法 --&gt;
+&lt;a v-on:click&#x3D;&quot;doSomething&quot;&gt;&lt;&#x2F;a&gt;
+&lt;!-- 缩写 --&gt;
+&lt;a @click&#x3D;&quot;doSomething&quot;&gt;&lt;&#x2F;a&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="事件修饰符"><a href="#事件修饰符" class="headerlink" title="事件修饰符"></a>事件修饰符</h2><ul>
 <li><p><code>.stop</code> 阻止冒泡，调用 event.stopPropagation()</p>
@@ -203,12 +209,22 @@
 <li>作用：在表单元素上创建双向数据绑定</li>
 <li>说明：监听用户的输入事件以更新数据</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; v-model=&quot;message&quot; placeholder=&quot;edit me&quot;&gt;</span><br><span class="line">&lt;p&gt;Message is: &#123;&#123; message &#125;&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;input type&#x3D;&quot;text&quot; v-model&#x3D;&quot;message&quot; placeholder&#x3D;&quot;edit me&quot;&gt;
+&lt;p&gt;Message is: &#123;&#123; message &#125;&#125;&lt;&#x2F;p&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h2 id="v-for"><a href="#v-for" class="headerlink" title="v-for"></a>v-for</h2><ul>
 <li>作用：基于源数据多次渲染元素或模板块</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 1 基础用法 --&gt;</span><br><span class="line">&lt;div v-for=&quot;item in items&quot;&gt;</span><br><span class="line">  &#123;&#123; item.text &#125;&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- item 为当前项，index 为索引 --&gt;</span><br><span class="line">&lt;p v-for=&quot;(item, index) in list&quot;&gt;&#123;&#123;item&#125;&#125; -- &#123;&#123;index&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;!-- item 为值，key 为键，index 为索引 --&gt;</span><br><span class="line">&lt;p v-for=&quot;(item, key, index) in obj&quot;&gt;&#123;&#123;item&#125;&#125; -- &#123;&#123;key&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;p v-for=&quot;item in 10&quot;&gt;&#123;&#123;item&#125;&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;!-- 1 基础用法 --&gt;
+&lt;div v-for&#x3D;&quot;item in items&quot;&gt;
+  &#123;&#123; item.text &#125;&#125;
+&lt;&#x2F;div&gt;
+
+&lt;!-- item 为当前项，index 为索引 --&gt;
+&lt;p v-for&#x3D;&quot;(item, index) in list&quot;&gt;&#123;&#123;item&#125;&#125; -- &#123;&#123;index&#125;&#125;&lt;&#x2F;p&gt;
+&lt;!-- item 为值，key 为键，index 为索引 --&gt;
+&lt;p v-for&#x3D;&quot;(item, key, index) in obj&quot;&gt;&#123;&#123;item&#125;&#125; -- &#123;&#123;key&#125;&#125;&lt;&#x2F;p&gt;
+&lt;p v-for&#x3D;&quot;item in 10&quot;&gt;&#123;&#123;item&#125;&#125;&lt;&#x2F;p&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="key属性"><a href="#key属性" class="headerlink" title="key属性"></a>key属性</h2><ul>
 <li>推荐：使用 <code>v-for</code> 的时候提供 <code>key</code> 属性，以获得性能提升。</li>
@@ -218,7 +234,25 @@
 <li>使用方式：<code>v-bind:class=&quot;expression&quot;</code> or <code>:class=&quot;expression&quot;</code></li>
 <li>表达式的类型：字符串、数组、对象（重点）</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 1 --&gt;</span><br><span class="line">&lt;div v-bind:class=&quot;&#123; active: true &#125;&quot;&gt;&lt;/div&gt; ===&gt; 解析后</span><br><span class="line">&lt;div class=&quot;active&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 2 --&gt;</span><br><span class="line">&lt;div :class=&quot;[&#x27;active&#x27;, &#x27;text-danger&#x27;]&quot;&gt;&lt;/div&gt; ===&gt;解析后</span><br><span class="line">&lt;div class=&quot;active text-danger&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 3 --&gt;</span><br><span class="line">&lt;div v-bind:class=&quot;[&#123; active: true &#125;, errorClass]&quot;&gt;&lt;/div&gt; ===&gt;解析后</span><br><span class="line">&lt;div class=&quot;active text-danger&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">--- style ---</span><br><span class="line">&lt;!-- 1 --&gt;</span><br><span class="line">&lt;div v-bind:style=&quot;&#123; color: activeColor, &#x27;font-size&#x27;: fontSize + &#x27;px&#x27; &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;!-- 2 将多个 样式对象 应用到一个元素上--&gt;</span><br><span class="line">&lt;!-- baseStyles 和 overridingStyles 都是data中定义的对象 --&gt;</span><br><span class="line">&lt;div v-bind:style=&quot;[baseStyles, overridingStyles]&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;!-- 1 --&gt;
+&lt;div v-bind:class&#x3D;&quot;&#123; active: true &#125;&quot;&gt;&lt;&#x2F;div&gt; &#x3D;&#x3D;&#x3D;&gt; 解析后
+&lt;div class&#x3D;&quot;active&quot;&gt;&lt;&#x2F;div&gt;
+
+&lt;!-- 2 --&gt;
+&lt;div :class&#x3D;&quot;[&#39;active&#39;, &#39;text-danger&#39;]&quot;&gt;&lt;&#x2F;div&gt; &#x3D;&#x3D;&#x3D;&gt;解析后
+&lt;div class&#x3D;&quot;active text-danger&quot;&gt;&lt;&#x2F;div&gt;
+
+&lt;!-- 3 --&gt;
+&lt;div v-bind:class&#x3D;&quot;[&#123; active: true &#125;, errorClass]&quot;&gt;&lt;&#x2F;div&gt; &#x3D;&#x3D;&#x3D;&gt;解析后
+&lt;div class&#x3D;&quot;active text-danger&quot;&gt;&lt;&#x2F;div&gt;
+
+
+--- style ---
+&lt;!-- 1 --&gt;
+&lt;div v-bind:style&#x3D;&quot;&#123; color: activeColor, &#39;font-size&#39;: fontSize + &#39;px&#39; &#125;&quot;&gt;&lt;&#x2F;div&gt;
+&lt;!-- 2 将多个 样式对象 应用到一个元素上--&gt;
+&lt;!-- baseStyles 和 overridingStyles 都是data中定义的对象 --&gt;
+&lt;div v-bind:style&#x3D;&quot;[baseStyles, overridingStyles]&quot;&gt;&lt;&#x2F;div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="v-if-和-v-show"><a href="#v-if-和-v-show" class="headerlink" title="v-if 和 v-show"></a>v-if 和 v-show</h2><ul>
 <li><code>v-if</code>：根据表达式的值的真假条件，销毁或重建元素</li>
