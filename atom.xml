@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-20T07:54:21.960Z</updated>
+  <updated>2022-02-20T14:23:12.368Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ES6</title>
+    <link href="http://example.com/2022/02/20/ES6/"/>
+    <id>http://example.com/2022/02/20/ES6/</id>
+    <published>2022-02-20T13:59:45.000Z</published>
+    <updated>2022-02-20T14:23:12.368Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><ul><li><strong>const命令</strong>：声明常量</li><li><strong>let命令</strong>：声明变量</li></ul><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><ul><li>作用域<ul><li><strong>全局作用域</strong></li><li><strong>函数作用域</strong>：<code>function() &#123;&#125;</code></li><li><strong>块级作用域</strong>：<code>&#123;&#125;</code></li></ul></li><li>作用范围<ul><li><code>var命令</code>在全局代码中执行</li><li><code>const命令</code>和<code>let命令</code>只能在代码块中执行</li></ul></li><li>赋值使用<ul><li><code>const命令</code>声明常量后必须立马赋值</li><li><code>let命令</code>声明变量后可立马赋值或使用时赋值</li></ul></li><li>声明方法：<code>var</code>、<code>const</code>、<code>let</code>、<code>function</code>、<code>class</code>、<code>import</code></li></ul><h3 id="重点难点"><a href="#重点难点" class="headerlink" title="重点难点"></a>重点难点</h3><ul><li>不允许重复声明</li><li>未定义就使用会报错：<code>const命令</code>和<code>let命令</code>不存在变量提升</li><li>暂时性死区：在代码块内使用<code>const命令</code>和<code>let命令</code>声明变量之前，该变量都不可用</li></ul><h2 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h2><ul><li><strong>字符串解构</strong>：<code>const [a, b, c, d, e] = &quot;hello&quot;</code></li><li><strong>数值解构</strong>：<code>const &#123; toString: s &#125; = 123</code></li><li><strong>布尔解构</strong>：<code>const &#123; toString: b &#125; = true</code></li><li><strong>对象解构</strong></li><li>形式：<code>const &#123; x, y &#125; = &#123; x: 1, y: 2 &#125;</code></li><li>默认：<code>const &#123; x, y = 2 &#125; = &#123; x: 1 &#125;</code></li><li>改名：<code>const &#123; x, y: z &#125; = &#123; x: 1, y: 2 &#125;</code></li><li><strong>数组解构</strong></li><li>规则：数据结构具有<code>Iterator接口</code>可采用数组形式的解构赋值</li><li>形式：<code>const [x, y] = [1, 2]</code></li><li>默认：<code>const [x, y = 2] = [1]</code></li><li><strong>函数参数解构</strong></li><li>数组解构：<code>function Func([x = 0, y = 1]) &#123;&#125;</code></li><li>对象解构：<code>function Func(&#123; x = 0, y = 1 &#125; = &#123;&#125;) &#123;&#125;</code></li></ul><h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><ul><li>交换变量值：<code>[x, y] = [y, x]</code></li><li>返回函数多个值：<code>const [x, y, z] = Func()</code></li><li>定义函数参数：<code>Func([1, 2])</code></li><li>提取JSON数据：<code>const &#123; name, version &#125; = packageJson</code></li><li>定义函数参数默认值：<code>function Func(&#123; x = 1, y = 2 &#125; = &#123;&#125;) &#123;&#125;</code></li><li>遍历Map结构：<code>for (let [k, v] of Map) &#123;&#125;</code></li><li>输入模块指定属性和方法：<code>const &#123; readFile, writeFile &#125; = require(&quot;fs&quot;)</code></li></ul><h3 id="重点难点-1"><a href="#重点难点-1" class="headerlink" title="重点难点"></a>重点难点</h3><ul><li>匹配模式：只要等号两边的模式相同，左边的变量就会被赋予对应的值</li><li>解构赋值规则：只要等号右边的值不是对象或数组，就先将其转为对象</li><li>解构默认值生效条件：属性值严格等于<code>undefined</code></li><li>解构遵循匹配模式</li><li>解构不成功时变量的值等于<code>undefined</code></li><li><code>undefined</code>和<code>null</code>无法转为对象，因此无法进行解构</li></ul><h3 id="Module"><a href="#Module" class="headerlink" title="Module"></a>Module</h3><ul><li>命令<ul><li>export：规定模块对外接口<ul><li><strong>默认导出</strong>：<code>export default Person</code>(导入时可指定模块任意名称，无需知晓内部真实名称)</li><li><strong>单独导出</strong>：<code>export const name = &quot;Bruce&quot;</code></li><li><strong>按需导出</strong>：<code>export &#123; age, name, sex &#125;</code>(推荐)</li><li><strong>改名导出</strong>：<code>export &#123; name as newName &#125;</code></li></ul></li><li>import：导入模块内部功能<ul><li><strong>默认导入</strong>：<code>import Person from &quot;person&quot;</code></li><li><strong>整体导入</strong>：<code>import * as Person from &quot;person&quot;</code></li><li><strong>按需导入</strong>：<code>import &#123; age, name, sex &#125; from &quot;person&quot;</code></li><li><strong>改名导入</strong>：<code>import &#123; name as newName &#125; from &quot;person&quot;</code></li><li><strong>自执导入</strong>：<code>import &quot;person&quot;</code></li><li><strong>复合导入</strong>：<code>import Person, &#123; name &#125; from &quot;person&quot;</code></li></ul></li></ul></li><li>继承：<code>默认导出</code>和<code>改名导出</code>结合使用可使模块具备继承性</li><li>设计思想：尽量地静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量</li><li>严格模式：ES6模块自动采用严格模式(不管模块头部是否添加<code>use strict</code>)</li></ul><h3 id="重点难点-2"><a href="#重点难点-2" class="headerlink" title="重点难点"></a>重点难点</h3><ul><li>ES6模块中，顶层<code>this</code>指向<code>undefined</code>，不应该在顶层代码使用<code>this</code></li><li>一个模块就是一个独立的文件，该文件内部的所有变量，外部无法获取</li><li><code>export命令</code>输出的接口与其对应的值是<code>动态绑定关系</code>，即通过该接口可获取模块内部实时的值</li><li><code>import命令</code>大括号里的变量名必须与被导入模块对外接口的名称相同</li><li><code>import命令</code>输入的变量只读(本质是输入接口)，不允许在加载模块的脚本里改写接口</li><li><code>import命令</code>命令具有提升效果，会提升到整个模块的头部，首先执行</li><li>重复执行同一句<code>import语句</code>，只会执行一次</li><li><code>export default</code>命令只能使用一次</li><li><code>export default命令</code>导出的整体模块，在执行<code>import命令</code>时其后不能跟<code>大括号</code></li><li><code>export default命令</code>本质是输出一个名为<code>default</code>的变量，后面不能跟<code>变量声明语句</code></li><li><code>export default命令</code>本质是将后面的值赋给名为<code>default</code>的变量，可直接将值写在其后</li><li><code>export default命令</code>和<code>export &#123;&#125;命令</code>可同时存在，对应<code>复合导入</code></li><li><code>export命令</code>和<code>import命令</code>可出现在模块任何位置，只要处于模块顶层即可，不能处于块级作用域</li><li><code>import()</code>加载模块成功后，此模块会作为一个对象，当作<code>then()</code>的参数，可使用<code>对象解构赋值</code>来获取输出接口</li><li>同时动态加载多个模块时，可使用<code>Promise.all()</code>和<code>import()</code>相结合来实现</li><li><code>import()</code>和结合<code>async/await</code>来书写同步操作的代码</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;声明&quot;&gt;&lt;a href=&quot;#声明&quot; class=&quot;headerlink&quot; title=&quot;声明&quot;&gt;&lt;/a&gt;声明&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;const命令&lt;/strong&gt;：声明常量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;let命令&lt;/strong&gt;：声明</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="ES6" scheme="http://example.com/categories/JavaScript/ES6/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+    <category term="ES6" scheme="http://example.com/tags/ES6/"/>
+    
+  </entry>
   
   <entry>
     <title>Vuex</title>
@@ -507,30 +537,6 @@
       
       
     <summary type="html">&lt;h2 id=&quot;基本选择器&quot;&gt;&lt;a href=&quot;#基本选择器&quot; class=&quot;headerlink&quot; title=&quot;基本选择器&quot;&gt;&lt;/a&gt;基本选择器&lt;/h2&gt;&lt;p&gt;&lt;img src= &quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///</summary>
-      
-    
-    
-    
-    <category term="jQuery" scheme="http://example.com/categories/jQuery/"/>
-    
-    
-    <category term="jQuery" scheme="http://example.com/tags/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jQuery入门</title>
-    <link href="http://example.com/2022/02/19/jQuery%E5%85%A5%E9%97%A8/"/>
-    <id>http://example.com/2022/02/19/jQuery%E5%85%A5%E9%97%A8/</id>
-    <published>2022-02-19T01:19:58.000Z</published>
-    <updated>2022-02-19T02:08:37.770Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="jquery的入口函数"><a href="#jquery的入口函数" class="headerlink" title="jquery的入口函数"></a>jquery的入口函数</h2><h3 id="使用jQuery的三个步骤："><a href="#使用jQuery的三个步骤：" class="headerlink" title="使用jQuery的三个步骤："></a>使用jQuery的三个步骤：</h3><ol><li>引入jQuery文件</li><li>入口函数</li><li>功能实现</li></ol><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//第二种写法</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="jQuery入口函数与js入口函数的对比"><a href="#jQuery入口函数与js入口函数的对比" class="headerlink" title="jQuery入口函数与js入口函数的对比"></a>jQuery入口函数与js入口函数的对比</h3><ol><li>JavaScript的入口函数要等到页面中所有资源（包括图片、文件）加载完成才开始执行。</li><li>jQuery的入口函数只会等待文档树加载完成就开始执行，并不会等待图片、文件的加载。</li></ol><h2 id="jQuery对象和DOM对象-重要"><a href="#jQuery对象和DOM对象-重要" class="headerlink" title="jQuery对象和DOM对象(重要)"></a>jQuery对象和DOM对象(重要)</h2><ol><li>DOM对象：使用JavaScript中的方法获取页面中的元素返回的对象就是DOM对象。</li><li>jQuery对象：jQuery对象就是使用jQuery的方法获取页面中的元素返回的对象就是jQuery对象。</li><li>jQuery对象其实就是DOM对象的包装集，包装了DOM对象的集合（伪数组）。</li><li>DOM对象与jQuery对象的方法不能混用。</li></ol><h3 id="DOM对象转换成jQuery对象"><a href="#DOM对象转换成jQuery对象" class="headerlink" title="DOM对象转换成jQuery对象"></a>DOM对象转换成jQuery对象</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">var</span> $obj <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span>domObj<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="jQuery对象转换成DOM对象"><a href="#jQuery对象转换成DOM对象" class="headerlink" title="jQuery对象转换成DOM对象"></a>jQuery对象转换成DOM对象</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">var</span> $li <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"li"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//第一种方法（推荐使用）</span>$li<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token comment">//第二种方法</span>$li<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;jquery的入口函数&quot;&gt;&lt;a href=&quot;#jquery的入口函数&quot; class=&quot;headerlink&quot; title=&quot;jquery的入口函数&quot;&gt;&lt;/a&gt;jquery的入口函数&lt;/h2&gt;&lt;h3 id=&quot;使用jQuery的三个步骤：&quot;&gt;&lt;a href=&quot;#使用j</summary>
       
     
     
