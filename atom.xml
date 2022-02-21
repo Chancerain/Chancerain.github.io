@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-20T15:12:35.503Z</updated>
+  <updated>2022-02-21T04:44:25.359Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,63 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>作用域与作用域链</title>
+    <link href="http://example.com/2022/02/21/%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/"/>
+    <id>http://example.com/2022/02/21/%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</id>
+    <published>2022-02-21T04:40:09.000Z</published>
+    <updated>2022-02-21T04:44:25.359Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><h3 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h3><ul><li>就是一块”地盘”, 一个代码段所在的区域</li><li>它是静态的(相对于上下文对象), 在编写代码时就确定了</li></ul><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ul><li>全局作用域</li><li>函数作用域</li><li>没有块作用域(ES6有了)</li></ul><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><ul><li>隔离变量，不同作用域下同名变量不会有冲突</li></ul><h2 id="作用域与执行上下文"><a href="#作用域与执行上下文" class="headerlink" title="作用域与执行上下文"></a>作用域与执行上下文</h2><h3 id="区别1"><a href="#区别1" class="headerlink" title="区别1"></a>区别1</h3><ul><li><p>全局作用域之外，每个函数都会创建自己的作用域，作用域在函数定义时就已经确定了。而不是在函数调用时</p></li><li><p>全局执行上下文环境是在全局作用域确定之后, js代码马上执行之前创建</p></li><li><p>函数执行上下文是在调用函数时, 函数体代码执行之前创建</p><h3 id="区别2"><a href="#区别2" class="headerlink" title="区别2"></a>区别2</h3></li><li><p>作用域是静态的, 只要函数定义好了就一直存在, 且不会再变化</p></li><li><p>执行上下文是动态的, 调用函数时创建, 函数调用结束时就会自动释放</p><h3 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h3></li><li><p>执行上下文(对象)是从属于所在的作用域</p></li><li><p>全局上下文环境&#x3D;&#x3D;&gt;全局作用域</p></li><li><p>函数上下文环境&#x3D;&#x3D;&gt;对应的函数使用域</p></li></ul><h2 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h2><h3 id="理解-1"><a href="#理解-1" class="headerlink" title="理解"></a>理解</h3><ul><li><p>多个上下级关系的作用域形成的链, 它的方向是从下向上的(从内到外)</p></li><li><p>查找变量时就是沿着作用域链来查找的</p><h3 id="查找一个变量的查找规则"><a href="#查找一个变量的查找规则" class="headerlink" title="查找一个变量的查找规则"></a>查找一个变量的查找规则</h3></li><li><p>在当前作用域下的执行上下文中查找对应的属性, 如果有直接返回, 否则进入2</p></li><li><p>在上一级作用域的执行上下文中查找对应的属性, 如果有直接返回, 否则进入3</p></li><li><p>再次执行2的相同操作, 直到全局作用域, 如果还找不到就抛出找不到的异常</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;作用域&quot;&gt;&lt;a href=&quot;#作用域&quot; class=&quot;headerlink&quot; title=&quot;作用域&quot;&gt;&lt;/a&gt;作用域&lt;/h2&gt;&lt;h3 id=&quot;理解&quot;&gt;&lt;a href=&quot;#理解&quot; class=&quot;headerlink&quot; title=&quot;理解&quot;&gt;&lt;/a&gt;理解&lt;/h3&gt;&lt;u</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="JS高级" scheme="http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>执行上下文与执行上下文栈</title>
+    <link href="http://example.com/2022/02/21/%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E4%B8%8E%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E6%A0%88/"/>
+    <id>http://example.com/2022/02/21/%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E4%B8%8E%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E6%A0%88/</id>
+    <published>2022-02-21T04:12:22.000Z</published>
+    <updated>2022-02-21T04:39:56.181Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="变量提升与函数提升"><a href="#变量提升与函数提升" class="headerlink" title="变量提升与函数提升"></a>变量提升与函数提升</h2><h3 id="变量声明提升"><a href="#变量声明提升" class="headerlink" title="变量声明提升"></a>变量声明提升</h3><ul><li>通过var定义(声明)的变量, 在定义语句之前就可以访问到</li><li>值: undefined</li></ul><h3 id="函数声明提升"><a href="#函数声明提升" class="headerlink" title="函数声明提升"></a>函数声明提升</h3><ul><li>通过function声明的函数, 在之前就可以直接调用</li><li>值: 函数定义(对象)</li></ul><h2 id="执行上下文"><a href="#执行上下文" class="headerlink" title="执行上下文"></a>执行上下文</h2><h3 id="代码分类-位置"><a href="#代码分类-位置" class="headerlink" title="代码分类(位置)"></a>代码分类(位置)</h3><ul><li>全局代码</li><li>函数(局部)代码</li></ul><h3 id="全局执行上下文"><a href="#全局执行上下文" class="headerlink" title="全局执行上下文"></a>全局执行上下文</h3><ul><li><p>在执行全局代码前将window确定为全局执行上下文</p></li><li><p>对全局数据进行预处理</p><ul><li>var定义的全局变量&#x3D;&#x3D;&gt;undefined, 添加为window的属性</li><li>function声明的全局函数&#x3D;&#x3D;&gt;赋值(fun), 添加为window的方法</li><li>this&#x3D;&#x3D;&gt;赋值(window)</li></ul></li><li><p>开始执行全局代码</p><h3 id="函数执行上下文"><a href="#函数执行上下文" class="headerlink" title="函数执行上下文"></a>函数执行上下文</h3></li><li><p>在调用函数, 准备执行函数体之前, 创建对应的函数执行上下文对象(虚拟的, 存在于栈中)</p></li><li><p>对局部数据进行预处理</p><ul><li>形参变量&#x3D;&#x3D;&gt; 赋值(实参) &#x3D;&#x3D;&gt;添加为执行上下文的属性</li><li>arguments&#x3D;&#x3D;&gt;赋值(实参列表), 添加为执行上下文的属性</li><li>var定义的局部变量&#x3D;&#x3D;&gt;undefined, 添加为执行上下文的属性</li><li>function声明的函数 &#x3D;&#x3D;&gt;赋值(fun), 添加为执行上下文的方法</li><li>this&#x3D;&#x3D;&gt;赋值(调用函数的对象)</li></ul></li><li><p>开始执行函数体代码</p></li></ul><h2 id="执行上下文栈"><a href="#执行上下文栈" class="headerlink" title="执行上下文栈"></a>执行上下文栈</h2><ol><li>在全局代码执行前, JS引擎就会创建一个栈来存储管理所有的执行上下文对象</li><li>在全局执行上下文(window)确定后, 将其添加到栈中(压栈)</li><li>在函数执行上下文创建后, 将其添加到栈中(压栈)</li><li>在当前函数执行完后,将栈顶的对象移除(出栈)</li><li>当所有的代码执行完后, 栈中只剩下window</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;变量提升与函数提升&quot;&gt;&lt;a href=&quot;#变量提升与函数提升&quot; class=&quot;headerlink&quot; title=&quot;变量提升与函数提升&quot;&gt;&lt;/a&gt;变量提升与函数提升&lt;/h2&gt;&lt;h3 id=&quot;变量声明提升&quot;&gt;&lt;a href=&quot;#变量声明提升&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="JS高级" scheme="http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>原型与原型链</title>
     <link href="http://example.com/2022/02/20/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
     <id>http://example.com/2022/02/20/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
     <published>2022-02-20T14:53:37.000Z</published>
-    <updated>2022-02-20T15:12:35.503Z</updated>
+    <updated>2022-02-21T04:11:33.499Z</updated>
     
     <content type="html"><![CDATA[<h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><h3 id="函数的prototype属性"><a href="#函数的prototype属性" class="headerlink" title="函数的prototype属性"></a>函数的prototype属性</h3><ul><li><p>每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)</p></li><li><p>原型对象中有一个属性constructor, 它指向函数对象</p><h3 id="给原型对象添加属性-一般都是方法"><a href="#给原型对象添加属性-一般都是方法" class="headerlink" title="给原型对象添加属性(一般都是方法)"></a>给原型对象添加属性(一般都是方法)</h3></li><li><p>作用: 函数的所有实例对象自动拥有原型中的属性(方法)</p></li></ul><h2 id="显式原型与隐式原型"><a href="#显式原型与隐式原型" class="headerlink" title="显式原型与隐式原型"></a>显式原型与隐式原型</h2><ol><li>每个函数function都有一个prototype，即显式原型(属性)</li><li>每个实例对象都有一个__  proto __，可称为隐式原型(属性)</li><li>对象的隐式原型的值为其对应构造函数的显式原型的值</li></ol><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul><li>函数的prototype属性: 在定义函数时自动添加的, 默认值是一个空Object对象</li><li>对象的__ proto __属性: 创建对象时自动添加的, 默认值为构造函数的prototype属性值</li><li>程序员能直接操作显式原型, 但不能直接操作隐式原型(ES6之前)</li></ul><h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><ul><li>访问一个对象的属性时，<ul><li>先在自身属性中查找，找到返回</li><li>如果没有, 再沿着__ proto __这条链向上查找, 找到返回</li><li>如果最终没找到, 返回undefined</li></ul></li><li>别名: 隐式原型链</li><li>作用: 查找对象的属性(方法)</li></ul><h3 id="instanceof是如何判断的"><a href="#instanceof是如何判断的" class="headerlink" title="instanceof是如何判断的?"></a>instanceof是如何判断的?</h3><ul><li>表达式: A instanceof B</li><li>如果B函数的显式原型对象在A对象的原型链上, 返回true, 否则返回false</li></ul>]]></content>
     
@@ -493,54 +545,6 @@
       
     <summary type="html">&lt;h2 id=&quot;val方法&quot;&gt;&lt;a href=&quot;#val方法&quot; class=&quot;headerlink&quot; title=&quot;val方法&quot;&gt;&lt;/a&gt;val方法&lt;/h2&gt;&lt;p&gt;val方法用于设置和获取表单元素的值，例如input、textarea的值&lt;/p&gt;
 &lt;pre class=&quot;line</summary>
-      
-    
-    
-    
-    <category term="jQuery" scheme="http://example.com/categories/jQuery/"/>
-    
-    
-    <category term="jQuery" scheme="http://example.com/tags/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>节点操作</title>
-    <link href="http://example.com/2022/02/19/%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C/"/>
-    <id>http://example.com/2022/02/19/%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C/</id>
-    <published>2022-02-19T01:56:39.000Z</published>
-    <updated>2022-02-19T02:19:00.317Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">var</span> $a <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'&lt;a href="http://www.baidu.com" target="_blank">百度1&lt;/a>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="克隆节点"><a href="#克隆节点" class="headerlink" title="克隆节点"></a>克隆节点</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*如果想克隆事件  false  true克隆事件*/</span><span class="token keyword">var</span> $cloneP <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">clone</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="添加-amp-移动节点"><a href="#添加-amp-移动节点" class="headerlink" title="添加&amp;移动节点"></a>添加&amp;移动节点</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*追加自身的最后面  传对象和html格式代码*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#box'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">'&lt;a href="http://www.baidu.com" target="_blank">&lt;b>百度3&lt;/b>&lt;/a>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#box'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*追加到目标元素最后面  传目标元素的选择器或者对象*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'&lt;a href="http://www.baidu.com" target="_blank">&lt;b>百度3&lt;/b>&lt;/a>'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendTo</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#box'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendTo</span><span class="token punctuation">(</span><span class="token string">'#box'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">prepend</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">prependTo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">after</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">before</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="删除节点-amp-清空节点"><a href="#删除节点-amp-清空节点" class="headerlink" title="删除节点&amp;清空节点"></a>删除节点&amp;清空节点</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*1.清空box里面的元素*/</span><span class="token comment">/* 清理门户 */</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#box'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*2.删除某个元素*/</span><span class="token comment">/* 自杀 */</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#box'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;创建节点&quot;&gt;&lt;a href=&quot;#创建节点&quot; class=&quot;headerlink&quot; title=&quot;创建节点&quot;&gt;&lt;/a&gt;创建节点&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-js&quot; data-language=&quot;js&quot;&gt;&lt;code cl</summary>
-      
-    
-    
-    
-    <category term="jQuery" scheme="http://example.com/categories/jQuery/"/>
-    
-    
-    <category term="jQuery" scheme="http://example.com/tags/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>动画</title>
-    <link href="http://example.com/2022/02/19/%E5%8A%A8%E7%94%BB/"/>
-    <id>http://example.com/2022/02/19/%E5%8A%A8%E7%94%BB/</id>
-    <published>2022-02-19T01:47:53.000Z</published>
-    <updated>2022-02-19T02:08:21.416Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="基本动画"><a href="#基本动画" class="headerlink" title="基本动画"></a>基本动画</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*注意：动画的本质是改变容器的大小和透明度*/</span><span class="token comment">/*注意：如果不传参数是看不到动画*/</span><span class="token comment">/*注意：可传入特殊的字符  fast normal slow*/</span><span class="token comment">/*注意：可传入数字 单位毫秒*/</span><span class="token comment">/*1.展示动画*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*2.隐藏动画*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*3.切换展示和隐藏*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toggle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="划入划出"><a href="#划入划出" class="headerlink" title="划入划出"></a>划入划出</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*注意：动画的本质是改变容器的高度*/</span><span class="token comment">/*1.滑入动画*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slideDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*2.滑出动画*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slideUp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*3.切换滑入滑出*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slideToggle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="淡入淡出"><a href="#淡入淡出" class="headerlink" title="淡入淡出"></a>淡入淡出</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*注意：动画的本质是改变容器的透明度*/</span><span class="token comment">/*1.淡入动画*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fadeIn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*2.淡出动画*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fadeOut</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*3.切换淡入淡出*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fadeToggle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fadeTo</span><span class="token punctuation">(</span><span class="token string">'speed'</span><span class="token punctuation">,</span><span class="token string">'opacity'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="自定义动画"><a href="#自定义动画" class="headerlink" title="自定义动画"></a>自定义动画</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/** 自定义动画* 参数1：需要做动画的属性* 参数2：需要执行动画的总时长* 参数3：执行动画的时候的速度* 参数4：执行动画完成之后的回调函数* */</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#box1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token literal-property property">left</span><span class="token operator">:</span><span class="token number">800</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token number">5000</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#box2'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token literal-property property">left</span><span class="token operator">:</span><span class="token number">800</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token number">5000</span><span class="token punctuation">,</span><span class="token string">'linear'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#box3'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token literal-property property">left</span><span class="token operator">:</span><span class="token number">800</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token number">5000</span><span class="token punctuation">,</span><span class="token string">'swing'</span><span class="token punctuation">,</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'动画执行完成'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="stop使用"><a href="#stop使用" class="headerlink" title="stop使用"></a>stop使用</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*1.停止当前动画  如果动画队列当中还有动画立即执行*/</span><span class="token comment">//$('div').stop();</span><span class="token comment">/*2.和stop()效果一致  说明这是默认设置*/</span><span class="token comment">//$('div').stop(false,false);</span><span class="token comment">/*3.停止当前动画  清除动画队列*/</span><span class="token comment">//$('div').stop(true,false);</span><span class="token comment">/*4.停止当前动画并且到结束位置  清除了动画队列*/</span><span class="token comment">//$('div').stop(true,true);</span><span class="token comment">/*5.停止当前动画并且到结束位置  如果动画队列当中还有动画立即执行*/</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;基本动画&quot;&gt;&lt;a href=&quot;#基本动画&quot; class=&quot;headerlink&quot; title=&quot;基本动画&quot;&gt;&lt;/a&gt;基本动画&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-js&quot; data-language=&quot;js&quot;&gt;&lt;code cl</summary>
       
     
     
