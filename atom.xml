@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-21T04:44:25.359Z</updated>
+  <updated>2022-02-21T04:56:18.528Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>继承模式</title>
+    <link href="http://example.com/2022/02/21/%E7%BB%A7%E6%89%BF%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://example.com/2022/02/21/%E7%BB%A7%E6%89%BF%E6%A8%A1%E5%BC%8F/</id>
+    <published>2022-02-21T04:52:33.000Z</published>
+    <updated>2022-02-21T04:56:18.528Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="原型链继承"><a href="#原型链继承" class="headerlink" title="原型链继承"></a>原型链继承</h2><p>套路</p><ol><li>定义父类型构造函数</li><li>给父类型的原型添加方法</li><li>定义子类型的构造函数</li><li>创建父类型的对象赋值给子类型的原型</li><li>将子类型原型的构造属性设置为子类型</li><li>给子类型原型添加方法</li><li>创建子类型的对象: 可以调用父类型的方法</li></ol><p>关键</p><ol><li>子类型的原型为父类型的一个实例对象</li></ol><h2 id="借用构造函数继承"><a href="#借用构造函数继承" class="headerlink" title="借用构造函数继承"></a>借用构造函数继承</h2><p>套路:</p><ol><li><p>定义父类型构造函数</p></li><li><p>定义子类型构造函数</p></li><li><p>在子类型构造函数中调用父类型构造</p></li></ol><p>关键:</p><ol><li>在子类型构造函数中通用call()调用父类型构造函数</li></ol><h2 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h2><ul><li>原型链+借用构造函数的组合继承</li></ul><ol><li><p>利用原型链实现对父类型对象的方法继承</p></li><li><p>利用super()借用父类型构建函数初始化相同属性</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;原型链继承&quot;&gt;&lt;a href=&quot;#原型链继承&quot; class=&quot;headerlink&quot; title=&quot;原型链继承&quot;&gt;&lt;/a&gt;原型链继承&lt;/h2&gt;&lt;p&gt;套路&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;定义父类型构造函数&lt;/li&gt;
+&lt;li&gt;给父类型的原型添加方法&lt;/li&gt;
+&lt;li&gt;定义</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="JS高级" scheme="http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对象创建模式</title>
+    <link href="http://example.com/2022/02/21/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://example.com/2022/02/21/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F/</id>
+    <published>2022-02-21T04:45:34.000Z</published>
+    <updated>2022-02-21T04:50:19.219Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Object构造函数模式"><a href="#Object构造函数模式" class="headerlink" title="Object构造函数模式"></a>Object构造函数模式</h2><ul><li>套路: 先创建空Object对象, 再动态添加属性&#x2F;方法</li><li>适用场景: 起始时不确定对象内部数据</li><li>问题: 语句太多</li></ul><h2 id="对象字面量模式"><a href="#对象字面量模式" class="headerlink" title="对象字面量模式"></a>对象字面量模式</h2><ul><li>套路: 使用{}创建对象, 同时指定属性&#x2F;方法</li><li>适用场景: 起始时对象内部数据是确定的</li><li>问题: 如果创建多个对象, 有重复代码</li></ul><h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><ul><li>套路: 通过工厂函数动态创建对象并返回</li><li>适用场景: 需要创建多个对象</li><li>问题: 对象没有一个具体的类型, 都是Object类型</li></ul><h2 id="自定义构造函数模式"><a href="#自定义构造函数模式" class="headerlink" title="自定义构造函数模式"></a>自定义构造函数模式</h2><ul><li>套路: 自定义构造函数, 通过new创建对象</li><li>适用场景: 需要创建多个类型确定的对象</li><li>问题: 每个对象都有相同的数据, 浪费内存</li></ul><h2 id="构造函数-原型的组合模式"><a href="#构造函数-原型的组合模式" class="headerlink" title="构造函数+原型的组合模式"></a>构造函数+原型的组合模式</h2><ul><li>套路: 自定义构造函数, 属性在函数中初始化, 方法添加到原型上</li><li>适用场景: 需要创建多个类型确定的对象</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Object构造函数模式&quot;&gt;&lt;a href=&quot;#Object构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;Object构造函数模式&quot;&gt;&lt;/a&gt;Object构造函数模式&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;套路: 先创建空Object对象, 再动态添加属</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="JS高级" scheme="http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>作用域与作用域链</title>
@@ -496,55 +553,6 @@
       
     <summary type="html">&lt;h2 id=&quot;each方法&quot;&gt;&lt;a href=&quot;#each方法&quot; class=&quot;headerlink&quot; title=&quot;each方法&quot;&gt;&lt;/a&gt;each方法&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;jQuery的隐式迭代会对所有的DOM对象设置相同的值，但是如果我们需要给每一个对</summary>
-      
-    
-    
-    
-    <category term="jQuery" scheme="http://example.com/categories/jQuery/"/>
-    
-    
-    <category term="jQuery" scheme="http://example.com/tags/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jQuery事件机制</title>
-    <link href="http://example.com/2022/02/19/jQuery%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6/"/>
-    <id>http://example.com/2022/02/19/jQuery%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6/</id>
-    <published>2022-02-19T02:24:04.000Z</published>
-    <updated>2022-02-19T12:59:36.307Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="on注册事件"><a href="#on注册事件" class="headerlink" title="on注册事件"></a>on注册事件</h2><h3 id="on注册简单事件"><a href="#on注册简单事件" class="headerlink" title="on注册简单事件"></a>on注册简单事件</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 表示给$(selector)绑定事件，并且由自己触发，不支持动态绑定。</span><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span> <span class="token string">"click"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="on注册委托事件"><a href="#on注册委托事件" class="headerlink" title="on注册委托事件"></a>on注册委托事件</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 表示给$(selector)绑定代理事件，当必须是它的内部元素span才能触发这个事件，支持动态绑定</span><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span> <span class="token string">"click"</span><span class="token punctuation">,</span><span class="token string">'span'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="on注册事件的语法"><a href="#on注册事件的语法" class="headerlink" title="on注册事件的语法"></a>on注册事件的语法</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 第一个参数：events，绑定事件的名称可以是由空格分隔的多个事件（标准事件或者自定义事件）</span><span class="token comment">// 第二个参数：selector, 执行事件的后代元素（可选），如果没有后代元素，那么事件将有自己执行。</span><span class="token comment">// 第三个参数：data，传递给处理函数的数据，事件触发的时候通过event.data来使用（不常使用）</span><span class="token comment">// 第四个参数：handler，事件处理函数</span><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span>events<span class="token punctuation">,</span><span class="token punctuation">[</span>selector<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>data<span class="token punctuation">]</span><span class="token punctuation">,</span>handler<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="事件解绑"><a href="#事件解绑" class="headerlink" title="事件解绑"></a>事件解绑</h2><h3 id="off方式"><a href="#off方式" class="headerlink" title="off方式"></a>off方式</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 解绑匹配元素的所有事件</span><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span>of <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 解绑匹配元素的所有click事件</span><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">off</span><span class="token punctuation">(</span><span class="token string">"click"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="触发事件"><a href="#触发事件" class="headerlink" title="触发事件"></a>触发事件</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//触发 click事件</span><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token string">"click"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="jQuery事件对象"><a href="#jQuery事件对象" class="headerlink" title="jQuery事件对象"></a>jQuery事件对象</h2><ul><li><p>screenX和screenY    对应屏幕最左上角的值</p></li><li><p>clientX和clientY    距离页面左上角的位置（忽视滚动条）</p></li><li><p>pageX和pageY    距离页面最顶部的左上角的位置（会计算滚动条的距离）</p></li><li><p>event.keyCode    按下的键盘代码</p></li><li><p>event.data    存储绑定事件时传递的附加数据</p></li><li><p>event.stopPropagation()    阻止事件冒泡行为</p></li><li><p>event.preventDefault()    阻止浏览器默认行为</p></li><li><p>return false:既能阻止事件冒泡，又能阻止浏览器默认行为。</p></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;on注册事件&quot;&gt;&lt;a href=&quot;#on注册事件&quot; class=&quot;headerlink&quot; title=&quot;on注册事件&quot;&gt;&lt;/a&gt;on注册事件&lt;/h2&gt;&lt;h3 id=&quot;on注册简单事件&quot;&gt;&lt;a href=&quot;#on注册简单事件&quot; class=&quot;headerlink&quot; </summary>
-      
-    
-    
-    
-    <category term="jQuery" scheme="http://example.com/categories/jQuery/"/>
-    
-    
-    <category term="jQuery" scheme="http://example.com/tags/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jQuery特殊属性操作</title>
-    <link href="http://example.com/2022/02/19/jQuery%E7%89%B9%E6%AE%8A%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C/"/>
-    <id>http://example.com/2022/02/19/jQuery%E7%89%B9%E6%AE%8A%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C/</id>
-    <published>2022-02-19T02:20:00.000Z</published>
-    <updated>2022-02-19T02:22:53.018Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="val方法"><a href="#val方法" class="headerlink" title="val方法"></a>val方法</h2><p>val方法用于设置和获取表单元素的值，例如input、textarea的值</p><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//设置值</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#name"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//获取值</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#name"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="html方法与text方法"><a href="#html方法与text方法" class="headerlink" title="html方法与text方法"></a>html方法与text方法</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//设置内容</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span><span class="token string">'&lt;span>这是一段内容&lt;/span>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//获取内容</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//设置内容</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token string">'&lt;span>这是一段内容&lt;/span>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//获取内容</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="width方法与height方法"><a href="#width方法与height方法" class="headerlink" title="width方法与height方法"></a>width方法与height方法</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//带参数表示设置高度</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">height</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//不带参数获取高度</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">height</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="获取网页的可视区宽高"><a href="#获取网页的可视区宽高" class="headerlink" title="获取网页的可视区宽高"></a>获取网页的可视区宽高</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//获取可视区宽度</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//获取可视区高度</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">height</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="scrollTop与scrollLeft"><a href="#scrollTop与scrollLeft" class="headerlink" title="scrollTop与scrollLeft"></a>scrollTop与scrollLeft</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//获取页面被卷曲的高度</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">scrollTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//获取页面被卷曲的宽度</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">scrollLeft</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="offset方法与position方法"><a href="#offset方法与position方法" class="headerlink" title="offset方法与position方法"></a>offset方法与position方法</h2><p>offset方法获取元素距离document的位置，position方法获取的是元素距离有定位的父元素的位置。</p><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//获取元素距离document的位置,返回值为对象：&#123;left:100, top:100&#125;</span><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">offset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//获取相对于其最近的有定位的父元素的位置。</span><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">position</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;val方法&quot;&gt;&lt;a href=&quot;#val方法&quot; class=&quot;headerlink&quot; title=&quot;val方法&quot;&gt;&lt;/a&gt;val方法&lt;/h2&gt;&lt;p&gt;val方法用于设置和获取表单元素的值，例如input、textarea的值&lt;/p&gt;
-&lt;pre class=&quot;line</summary>
       
     
     

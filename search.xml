@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>继承模式</title>
+      <link href="/2022/02/21/%E7%BB%A7%E6%89%BF%E6%A8%A1%E5%BC%8F/"/>
+      <url>/2022/02/21/%E7%BB%A7%E6%89%BF%E6%A8%A1%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="原型链继承"><a href="#原型链继承" class="headerlink" title="原型链继承"></a>原型链继承</h2><p>套路</p><ol><li>定义父类型构造函数</li><li>给父类型的原型添加方法</li><li>定义子类型的构造函数</li><li>创建父类型的对象赋值给子类型的原型</li><li>将子类型原型的构造属性设置为子类型</li><li>给子类型原型添加方法</li><li>创建子类型的对象: 可以调用父类型的方法</li></ol><p>关键</p><ol><li>子类型的原型为父类型的一个实例对象</li></ol><h2 id="借用构造函数继承"><a href="#借用构造函数继承" class="headerlink" title="借用构造函数继承"></a>借用构造函数继承</h2><p>套路:</p><ol><li><p>定义父类型构造函数</p></li><li><p>定义子类型构造函数</p></li><li><p>在子类型构造函数中调用父类型构造</p></li></ol><p>关键:</p><ol><li>在子类型构造函数中通用call()调用父类型构造函数</li></ol><h2 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h2><ul><li>原型链+借用构造函数的组合继承</li></ul><ol><li><p>利用原型链实现对父类型对象的方法继承</p></li><li><p>利用super()借用父类型构建函数初始化相同属性</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JS高级 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对象创建模式</title>
+      <link href="/2022/02/21/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F/"/>
+      <url>/2022/02/21/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Object构造函数模式"><a href="#Object构造函数模式" class="headerlink" title="Object构造函数模式"></a>Object构造函数模式</h2><ul><li>套路: 先创建空Object对象, 再动态添加属性&#x2F;方法</li><li>适用场景: 起始时不确定对象内部数据</li><li>问题: 语句太多</li></ul><h2 id="对象字面量模式"><a href="#对象字面量模式" class="headerlink" title="对象字面量模式"></a>对象字面量模式</h2><ul><li>套路: 使用{}创建对象, 同时指定属性&#x2F;方法</li><li>适用场景: 起始时对象内部数据是确定的</li><li>问题: 如果创建多个对象, 有重复代码</li></ul><h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><ul><li>套路: 通过工厂函数动态创建对象并返回</li><li>适用场景: 需要创建多个对象</li><li>问题: 对象没有一个具体的类型, 都是Object类型</li></ul><h2 id="自定义构造函数模式"><a href="#自定义构造函数模式" class="headerlink" title="自定义构造函数模式"></a>自定义构造函数模式</h2><ul><li>套路: 自定义构造函数, 通过new创建对象</li><li>适用场景: 需要创建多个类型确定的对象</li><li>问题: 每个对象都有相同的数据, 浪费内存</li></ul><h2 id="构造函数-原型的组合模式"><a href="#构造函数-原型的组合模式" class="headerlink" title="构造函数+原型的组合模式"></a>构造函数+原型的组合模式</h2><ul><li>套路: 自定义构造函数, 属性在函数中初始化, 方法添加到原型上</li><li>适用场景: 需要创建多个类型确定的对象</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JS高级 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>作用域与作用域链</title>
       <link href="/2022/02/21/%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/"/>
       <url>/2022/02/21/%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/</url>
