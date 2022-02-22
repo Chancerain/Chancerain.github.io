@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-22T12:37:14.583Z</updated>
+  <updated>2022-02-22T13:13:59.517Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,15 @@
     <link href="http://example.com/2022/02/22/%E5%BE%AE%E4%BB%BB%E5%8A%A1%E3%80%81%E5%AE%8F%E4%BB%BB%E5%8A%A1%E4%B8%8EEvent-Loop/"/>
     <id>http://example.com/2022/02/22/%E5%BE%AE%E4%BB%BB%E5%8A%A1%E3%80%81%E5%AE%8F%E4%BB%BB%E5%8A%A1%E4%B8%8EEvent-Loop/</id>
     <published>2022-02-22T11:54:38.000Z</published>
-    <updated>2022-02-22T12:37:14.583Z</updated>
+    <updated>2022-02-22T13:13:59.517Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="什么是宏任务与微任务？"><a href="#什么是宏任务与微任务？" class="headerlink" title="什么是宏任务与微任务？"></a>什么是宏任务与微任务？</h2><p>我们都知道 Js 是单线程都，但是一些高耗时操作就带来了进程阻塞问题。为了解决这个问题，Js 有两种任务的执行模式：<strong>同步模式（Synchronous）和异步模式（Asynchronous）</strong>。</p><p>在异步模式下，创建<strong>异步任务主要分为宏任务与微任务两种</strong>。ES6 规范中，宏任务（Macrotask） 称为 Task， 微任务（Microtask） 称为 Jobs。宏任务是由宿主（浏览器、Node）发起的，而微任务由 JS 自身发起。</p><h2 id="如何理解-script（整体代码块）是个宏任务呢"><a href="#如何理解-script（整体代码块）是个宏任务呢" class="headerlink" title="如何理解 script（整体代码块）是个宏任务呢"></a><strong>如何理解 script（整体代码块）是个宏任务呢</strong></h2><p>实际上如果同时存在两个 script 代码块，会首先在执行第一个 script 代码块中的同步代码，如果这个过程中创建了微任务并进入了微任务队列，第一个 script 同步代码执行完之后，会首先去清空微任务队列，再去开启第二个 script 代码块的执行。所以这里应该就可以理解 script（整体代码块）为什么会是宏任务。</p><h2 id="什么是-EventLoop-？"><a href="#什么是-EventLoop-？" class="headerlink" title="什么是 EventLoop ？"></a>什么是 EventLoop ？</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2baaf009636748c491898aafeceddb32~tplv-k3u1fbpfcp-watermark.awebp" alt="EventLoop.png"></p><p>因为首次执行宏队列中会有 script（整体代码块）任务，所以实际上就是 Js 解析完成后，在异步任务中，会先执行完所有的微任务，这里也是很多面试题喜欢考察的。需要注意的是，新创建的微任务会立即进入微任务队列排队执行，不需要等待下一次轮回。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;什么是宏任务与微任务？&quot;&gt;&lt;a href=&quot;#什么是宏任务与微任务？&quot; class=&quot;headerlink&quot; title=&quot;什么是宏任务与微任务？&quot;&gt;&lt;/a&gt;什么是宏任务与微任务？&lt;/h2&gt;&lt;p&gt;我们都知道 Js 是单线程都，但是一些高耗时操作就带来了进程阻塞问题</summary>
+      
     
     
     
