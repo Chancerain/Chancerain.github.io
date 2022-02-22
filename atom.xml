@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-22T11:52:21.516Z</updated>
+  <updated>2022-02-22T11:54:38.380Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微任务、宏任务与Event-Loop</title>
+    <link href="http://example.com/2022/02/22/%E5%BE%AE%E4%BB%BB%E5%8A%A1%E3%80%81%E5%AE%8F%E4%BB%BB%E5%8A%A1%E4%B8%8EEvent-Loop/"/>
+    <id>http://example.com/2022/02/22/%E5%BE%AE%E4%BB%BB%E5%8A%A1%E3%80%81%E5%AE%8F%E4%BB%BB%E5%8A%A1%E4%B8%8EEvent-Loop/</id>
+    <published>2022-02-22T11:54:38.000Z</published>
+    <updated>2022-02-22T11:54:38.380Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Promise</title>
@@ -526,32 +539,6 @@
 &lt;li&gt;更新DOM对象的 textContent&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class=&quot;line</summary>
-      
-    
-    
-    
-    <category term="Vue" scheme="http://example.com/categories/Vue/"/>
-    
-    <category term="Vue基础" scheme="http://example.com/categories/Vue/Vue%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="Vue" scheme="http://example.com/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>02 数据绑定</title>
-    <link href="http://example.com/2022/02/19/02%20%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A/"/>
-    <id>http://example.com/2022/02/19/02%20%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A/</id>
-    <published>2022-02-19T13:27:48.000Z</published>
-    <updated>2022-02-21T05:46:10.199Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h2><p>最常用的方式：<code>Mustache(插值语法)</code>，也就是 <code>&#123;&#123;&#125;&#125;</code> 语法</p><blockquote><p>解释：<code>&#123;&#123;&#125;&#125;</code>从数据对象<code>data</code>中获取数据</p><p>数据对象的属性值发生了改变，插值处的内容都会更新；<code>&#123;&#123;&#125;&#125;</code>中只能出现JavaScript表达式 而不能解析js语句</p></blockquote><h2 id="单向数据绑定"><a href="#单向数据绑定" class="headerlink" title="单向数据绑定"></a>单向数据绑定</h2><ol><li>语法：<code>v-bind:href =&quot;xxx&quot;</code> 或简写为 <code>:href =&quot;xxx&quot;</code></li><li>特点：数据只能从 data 流向页面</li></ol><h2 id="双向数据绑定"><a href="#双向数据绑定" class="headerlink" title="双向数据绑定"></a>双向数据绑定</h2><p>双向数据绑定：将DOM与Vue实例的data数据绑定到一起，彼此之间相互影响。数据的改变会引起DOM的改变，DOM的改变也会引起数据的变化</p><p>原理：<code>Object.defineProperty</code>中的<code>get</code>和<code>set</code>方法</p><ul><li><code>getter</code>和<code>setter</code>：访问器</li><li>作用：指定<code>读取或设置</code>对象属性值的时候，执行的操作</li></ul><h2 id="异步DOM更新"><a href="#异步DOM更新" class="headerlink" title="异步DOM更新"></a>异步DOM更新</h2><ul><li>说明：Vue 异步执行 DOM 更新，监视所有数据改变，一次性更新DOM</li><li>优势：可以去除重复数据，对于避免不必要的计算和 避免重复 DOM 操作上，非常重要</li><li>如果需要拿到更新后dom中的数据 则需要通过 <code>Vue.nextTick(callback)</code>：在DOM更新后，执行某个操作（属于DOM操作）</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;数据绑定&quot;&gt;&lt;a href=&quot;#数据绑定&quot; class=&quot;headerlink&quot; title=&quot;数据绑定&quot;&gt;&lt;/a&gt;数据绑定&lt;/h2&gt;&lt;p&gt;最常用的方式：&lt;code&gt;Mustache(插值语法)&lt;/code&gt;，也就是 &lt;code&gt;&amp;#123;&amp;#123;&amp;#125</summary>
       
     
     
