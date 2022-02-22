@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Promise</title>
+      <link href="/2022/02/22/Promise/"/>
+      <url>/2022/02/22/Promise/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> ES6 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> ES6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>this的指向问题</title>
       <link href="/2022/02/21/this%E7%9A%84%E6%8C%87%E5%90%91%E9%97%AE%E9%A2%98/"/>
       <url>/2022/02/21/this%E7%9A%84%E6%8C%87%E5%90%91%E9%97%AE%E9%A2%98/</url>
