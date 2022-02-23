@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>http协议</title>
+      <link href="/2022/02/23/http%E5%8D%8F%E8%AE%AE/"/>
+      <url>/2022/02/23/http%E5%8D%8F%E8%AE%AE/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> http </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ajax</title>
+      <link href="/2022/02/23/Ajax/"/>
+      <url>/2022/02/23/Ajax/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ajax </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>虚拟DOM与Diff算法</title>
       <link href="/2022/02/22/%E8%99%9A%E6%8B%9FDOM%E4%B8%8EDiff%E7%AE%97%E6%B3%95/"/>
       <url>/2022/02/22/%E8%99%9A%E6%8B%9FDOM%E4%B8%8EDiff%E7%AE%97%E6%B3%95/</url>
