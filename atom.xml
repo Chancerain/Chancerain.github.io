@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-25T13:20:05.745Z</updated>
+  <updated>2022-02-25T13:45:49.651Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,15 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>03 Express</title>
-    <link href="http://example.com/2022/02/25/03-Express/"/>
-    <id>http://example.com/2022/02/25/03-Express/</id>
+    <title>04 Express路由</title>
+    <link href="http://example.com/2022/02/25/04-Express%E8%B7%AF%E7%94%B1/"/>
+    <id>http://example.com/2022/02/25/04-Express%E8%B7%AF%E7%94%B1/</id>
+    <published>2022-02-25T13:45:40.000Z</published>
+    <updated>2022-02-25T13:45:49.651Z</updated>
+    
+    
+    
+    
+    <category term="Node.js" scheme="http://example.com/categories/Node-js/"/>
+    
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+    <category term="Node.js" scheme="http://example.com/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>03 Express的基本使用</title>
+    <link href="http://example.com/2022/02/25/03-Express%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2022/02/25/03-Express%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</id>
     <published>2022-02-25T13:20:05.000Z</published>
-    <updated>2022-02-25T13:20:05.745Z</updated>
+    <updated>2022-02-25T13:44:45.925Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm i express@4.17.1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="创建基本的-Web-服务器"><a href="#创建基本的-Web-服务器" class="headerlink" title="创建基本的 Web 服务器"></a>创建基本的 Web 服务器</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//导入express</span><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token comment">//创建web服务器</span><span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//调用 app.listen（端口号，启动成功后的回调函数），启动服务器</span>app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'express server running at http://127.0.0.1'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="监听-GET-请求"><a href="#监听-GET-请求" class="headerlink" title="监听 GET 请求"></a>监听 GET 请求</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'请求url'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token comment">//req:请求对象（包含了与请求相关的属性和方法）</span><span class="token comment">//res:响应对象（包含了与请求相关的属性和方法）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="监听-POST-请求"><a href="#监听-POST-请求" class="headerlink" title="监听 POST 请求"></a>监听 POST 请求</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'请求url'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token comment">//req:请求对象（包含了与请求相关的属性和方法）</span><span class="token comment">//res:响应对象（包含了与请求相关的属性和方法）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="把内容响应给客户端"><a href="#把内容响应给客户端" class="headerlink" title="把内容响应给客户端"></a>把内容响应给客户端</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>        res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'请求成功'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="获取-URL-中携带的查询参数"><a href="#获取-URL-中携带的查询参数" class="headerlink" title="获取 URL 中携带的查询参数"></a>获取 URL 中携带的查询参数</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>        <span class="token comment">//req.query默认是一个空对象</span>        <span class="token comment">//客户端使用 ?name=zs&amp;age=20 这种查询字符串形式。发送到服务器的参数</span>        <span class="token comment">//req.query.name   req.query.age</span>                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>query<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="获取-URL-中的动态参数"><a href="#获取-URL-中的动态参数" class="headerlink" title="获取 URL 中的动态参数"></a>获取 URL 中的动态参数</h2><p>通过 req.params 对象，可以访问到 URL 中，通过 : 匹配到的动态参数：</p><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/:id'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>        <span class="token comment">//req.params是一个空对象</span>  <span class="token comment">//里面存着:动态匹配到的参数值</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>params<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=</summary>
+      
     
     
     
+    <category term="Node.js" scheme="http://example.com/categories/Node-js/"/>
     
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+    <category term="Node.js" scheme="http://example.com/tags/Node-js/"/>
     
   </entry>
   
@@ -477,36 +509,6 @@
       
       
     <summary type="html">&lt;h2 id=&quot;默认绑定规则&quot;&gt;&lt;a href=&quot;#默认绑定规则&quot; class=&quot;headerlink&quot; title=&quot;默认绑定规则&quot;&gt;&lt;/a&gt;默认绑定规则&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-js&quot; data-language=&quot;js&quot;&gt;</summary>
-      
-    
-    
-    
-    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
-    
-    <category term="JS高级" scheme="http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/"/>
-    
-    
-    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>06 继承模式</title>
-    <link href="http://example.com/2022/02/21/06%20%E7%BB%A7%E6%89%BF%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://example.com/2022/02/21/06%20%E7%BB%A7%E6%89%BF%E6%A8%A1%E5%BC%8F/</id>
-    <published>2022-02-21T04:52:33.000Z</published>
-    <updated>2022-02-21T05:44:59.923Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="原型链继承"><a href="#原型链继承" class="headerlink" title="原型链继承"></a>原型链继承</h2><p>套路</p><ol><li>定义父类型构造函数</li><li>给父类型的原型添加方法</li><li>定义子类型的构造函数</li><li>创建父类型的对象赋值给子类型的原型</li><li>将子类型原型的构造属性设置为子类型</li><li>给子类型原型添加方法</li><li>创建子类型的对象: 可以调用父类型的方法</li></ol><p>关键</p><ol><li>子类型的原型为父类型的一个实例对象</li></ol><h2 id="借用构造函数继承"><a href="#借用构造函数继承" class="headerlink" title="借用构造函数继承"></a>借用构造函数继承</h2><p>套路:</p><ol><li><p>定义父类型构造函数</p></li><li><p>定义子类型构造函数</p></li><li><p>在子类型构造函数中调用父类型构造</p></li></ol><p>关键:</p><ol><li>在子类型构造函数中通用call()调用父类型构造函数</li></ol><h2 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h2><ul><li>原型链+借用构造函数的组合继承</li></ul><ol><li><p>利用原型链实现对父类型对象的方法继承</p></li><li><p>利用super()借用父类型构建函数初始化相同属性</p></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;原型链继承&quot;&gt;&lt;a href=&quot;#原型链继承&quot; class=&quot;headerlink&quot; title=&quot;原型链继承&quot;&gt;&lt;/a&gt;原型链继承&lt;/h2&gt;&lt;p&gt;套路&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;定义父类型构造函数&lt;/li&gt;
-&lt;li&gt;给父类型的原型添加方法&lt;/li&gt;
-&lt;li&gt;定义</summary>
       
     
     

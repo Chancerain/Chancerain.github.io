@@ -4,13 +4,54 @@
   
     
     <entry>
-      <title>03 Express</title>
-      <link href="/2022/02/25/03-Express/"/>
-      <url>/2022/02/25/03-Express/</url>
+      <title>04 Express路由</title>
+      <link href="/2022/02/25/04-Express%E8%B7%AF%E7%94%B1/"/>
+      <url>/2022/02/25/04-Express%E8%B7%AF%E7%94%B1/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> Node.js </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> Node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>03 Express的基本使用</title>
+      <link href="/2022/02/25/03-Express%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+      <url>/2022/02/25/03-Express%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm i express@4.17.1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="创建基本的-Web-服务器"><a href="#创建基本的-Web-服务器" class="headerlink" title="创建基本的 Web 服务器"></a>创建基本的 Web 服务器</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//导入express</span><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token comment">//创建web服务器</span><span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//调用 app.listen（端口号，启动成功后的回调函数），启动服务器</span>app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'express server running at http://127.0.0.1'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="监听-GET-请求"><a href="#监听-GET-请求" class="headerlink" title="监听 GET 请求"></a>监听 GET 请求</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'请求url'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token comment">//req:请求对象（包含了与请求相关的属性和方法）</span><span class="token comment">//res:响应对象（包含了与请求相关的属性和方法）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="监听-POST-请求"><a href="#监听-POST-请求" class="headerlink" title="监听 POST 请求"></a>监听 POST 请求</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'请求url'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token comment">//req:请求对象（包含了与请求相关的属性和方法）</span><span class="token comment">//res:响应对象（包含了与请求相关的属性和方法）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="把内容响应给客户端"><a href="#把内容响应给客户端" class="headerlink" title="把内容响应给客户端"></a>把内容响应给客户端</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>        res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'请求成功'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="获取-URL-中携带的查询参数"><a href="#获取-URL-中携带的查询参数" class="headerlink" title="获取 URL 中携带的查询参数"></a>获取 URL 中携带的查询参数</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>        <span class="token comment">//req.query默认是一个空对象</span>        <span class="token comment">//客户端使用 ?name=zs&amp;age=20 这种查询字符串形式。发送到服务器的参数</span>        <span class="token comment">//req.query.name   req.query.age</span>                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>query<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="获取-URL-中的动态参数"><a href="#获取-URL-中的动态参数" class="headerlink" title="获取 URL 中的动态参数"></a>获取 URL 中的动态参数</h2><p>通过 req.params 对象，可以访问到 URL 中，通过 : 匹配到的动态参数：</p><pre class="line-numbers language-js" data-language="js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/:id'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>        <span class="token comment">//req.params是一个空对象</span>  <span class="token comment">//里面存着:动态匹配到的参数值</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>params<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Node.js </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> Node.js </tag>
+            
+        </tags>
       
     </entry>
     
