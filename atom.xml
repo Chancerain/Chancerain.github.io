@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-25T12:50:38.815Z</updated>
+  <updated>2022-02-25T13:20:05.745Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,12 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>03 Express</title>
+    <link href="http://example.com/2022/02/25/03-Express/"/>
+    <id>http://example.com/2022/02/25/03-Express/</id>
+    <published>2022-02-25T13:20:05.000Z</published>
+    <updated>2022-02-25T13:20:05.745Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>02 模块化</title>
     <link href="http://example.com/2022/02/25/02-%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
     <id>http://example.com/2022/02/25/02-%E6%A8%A1%E5%9D%97%E5%8C%96/</id>
     <published>2022-02-25T12:50:10.000Z</published>
-    <updated>2022-02-25T12:50:38.815Z</updated>
+    <updated>2022-02-25T13:18:20.771Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="模块化的基本概念"><a href="#模块化的基本概念" class="headerlink" title="模块化的基本概念"></a>模块化的基本概念</h2><p>编程领域中的模块化，就是遵守固定的规则，把一个大文件拆成独立并互相依赖的多个小模块。 </p><p>把代码进行模块化拆分的好处： </p><ol><li>提高了代码的复用性</li><li>提高了代码的可维护性</li><li>可以实现按需加载</li></ol><h2 id="Node-js-中的模块化"><a href="#Node-js-中的模块化" class="headerlink" title="Node.js 中的模块化"></a>Node.js 中的模块化</h2><h3 id="Node-js-中模块的分类"><a href="#Node-js-中模块的分类" class="headerlink" title="Node.js 中模块的分类"></a>Node.js 中模块的分类</h3><p>Node.js 中根据模块来源的不同，将模块分为了 3 大类，分别是： </p><ol><li>内置模块（内置模块是由 Node.js 官方提供的，例如 fs、path、http 等）</li><li>自定义模块（用户创建的每个 .js 文件，都是自定义模块） </li><li>第三方模块（由第三方开发出来的模块，并非官方提供的内置模块，也不是用户创建的自定义模块，使用前需要先下载）</li></ol><h3 id="加载模块"><a href="#加载模块" class="headerlink" title="加载模块"></a>加载模块</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//加载内置的fs模块</span><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token comment">//加载用户的自定义模块</span><span class="token keyword">const</span> custom <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./custom.js'</span><span class="token punctuation">)</span><span class="token comment">//加载第三方模块</span><span class="token keyword">const</span> moment <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'moment'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Node-js-中的模块作用域"><a href="#Node-js-中的模块作用域" class="headerlink" title="Node.js 中的模块作用域"></a>Node.js 中的模块作用域</h3><h4 id="什么是模块作用域"><a href="#什么是模块作用域" class="headerlink" title="什么是模块作用域"></a>什么是模块作用域</h4><p>和函数作用域类似，在自定义模块中定义的变量、方法等成员，只能在当前模块内被访问，这种模块级别的访问限制，叫做模块 作用域。</p><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s3.bmp.ovh/imgs/2022/02/e7e08e4c17970f0c.png"></p><h4 id="模块作用域的好处"><a href="#模块作用域的好处" class="headerlink" title="模块作用域的好处"></a>模块作用域的好处</h4><p>防止了全局变量污染的问题</p><h3 id="向外共享模块作用域中的成员"><a href="#向外共享模块作用域中的成员" class="headerlink" title="向外共享模块作用域中的成员"></a>向外共享模块作用域中的成员</h3><h4 id="module-对象"><a href="#module-对象" class="headerlink" title="module 对象"></a>module 对象</h4><p>在每个 .js 自定义模块中都有一个 module 对象，它里面存储了和当前模块有关的信息</p><h4 id="module-exports-对象"><a href="#module-exports-对象" class="headerlink" title="module.exports 对象"></a>module.exports 对象</h4><p>在自定义模块中，可以使用 module.exports 对象，将模块内的成员共享出去，供外界使用。 外界用 require() 方法导入自定义模块时，得到的就是 module.exports 所指向的对象</p><h4 id="共享成员时的注意点"><a href="#共享成员时的注意点" class="headerlink" title="共享成员时的注意点"></a>共享成员时的注意点</h4><p>使用 require() 方法导入模块时，导入的结果，永远以 module.exports 指向的对象为准。</p><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s3.bmp.ovh/imgs/2022/02/6dca115ee98dabcc.png"></p><h4 id="exports-对象"><a href="#exports-对象" class="headerlink" title="exports 对象"></a>exports 对象</h4><p>由于 module.exports 单词写起来比较复杂，为了简化向外共享成员的代码，Node 提供了 exports 对象。默认情况 下，exports 和 module.exports 指向同一个对象。最终共享的结果，还是以 module.exports 指向的对象为准。</p><h3 id="Node-js-中的模块化规范"><a href="#Node-js-中的模块化规范" class="headerlink" title="Node.js 中的模块化规范"></a>Node.js 中的模块化规范</h3><p>CommonJS 规定： </p><ol><li>每个模块内部，module 变量代表当前模块。</li><li>module 变量是一个对象，它的 exports 属性（即 module.exports）是对外的接口。</li><li>加载某个模块，其实是加载该模块的 module.exports 属性。require() 方法用于加载模块</li></ol><h2 id="npm与包"><a href="#npm与包" class="headerlink" title="npm与包"></a>npm与包</h2><h3 id="初次装包后多了哪些文件"><a href="#初次装包后多了哪些文件" class="headerlink" title="初次装包后多了哪些文件"></a>初次装包后多了哪些文件</h3><ul><li>node_modules 文件夹用来存放所有已安装到项目中的包。require() 导入第三方包时，就是从这个目录中查找并加载包。 </li><li>package-lock.json 配置文件用来记录 node_modules 目录下的每一个包的下载信息，例如包的名字、版本号、下载地址等。</li></ul><h3 id="包管理配置文件"><a href="#包管理配置文件" class="headerlink" title="包管理配置文件"></a>包管理配置文件</h3><p>npm 规定，在项目根目录中，必须提供一个叫做 package.json 的包管理配置文件。用来记录与项目有关的一些配置 信息。例如： </p><ul><li>项目的名称、版本号、描述等</li><li>项目中都用到了哪些包</li><li>哪些包只在开发期间会用到</li><li>那些包在开发和部署时都需要用到</li></ul><h4 id="dependencies-节点"><a href="#dependencies-节点" class="headerlink" title="dependencies 节点"></a>dependencies 节点</h4><p>package.json 文件中，有一个 dependencies 节点，专门用来记录您使用 npm install 命令安装了哪些包。</p><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s3.bmp.ovh/imgs/2022/02/7a7aeb9f48fe5528.png"></p><h4 id="devDependencies-节点"><a href="#devDependencies-节点" class="headerlink" title="devDependencies 节点"></a>devDependencies 节点</h4><p>如果某些包只在项目开发阶段会用到，在项目上线之后不会用到，则建议把这些包记录到 devDependencies 节点中。 </p><p>与之对应的，如果某些包在开发和项目上线之后都需要用到，则建议把这些包记录到 dependencies 节点中。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm i 包名 -Dnpm install 包名 --save-dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="包的分类"><a href="#包的分类" class="headerlink" title="包的分类"></a>包的分类</h3><h4 id="项目包"><a href="#项目包" class="headerlink" title="项目包"></a>项目包</h4><p>那些被安装到项目的 node_modules 目录中的包，都是项目包。 </p><p>项目包又分为两类，分别是：</p><ul><li>开发依赖包（被记录到 devDependencies 节点中的包，只在开发期间会用到）</li><li>核心依赖包（被记录到 dependencies 节点中的包，在开发期间和项目上线之后都会用到）</li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm i 包名 -D#开发依赖包npm i 包名#核型依赖包<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="全局包"><a href="#全局包" class="headerlink" title="全局包"></a>全局包</h4><p>在执行 npm install 命令时，如果提供了 -g 参数，则会把包安装为全局包。 </p><p>全局包会被安装到 C:\Users\用户目录\AppData\Roaming\npm\node_modules 目录下。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm i 包名 -gnpm uninstall 包名 -g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ol><li>只有工具性质的包，才有全局安装的必要性。因为它们提供了好用的终端命令。</li><li>判断某个包是否需要全局安装后才能使用，可以参考官方提供的使用说明即可。</li></ol><h3 id="规范的包结构"><a href="#规范的包结构" class="headerlink" title="规范的包结构"></a>规范的包结构</h3><ul><li>包必须以单独的目录而存在</li><li>包的顶级目录下要必须包含 package.json 这个包管理配置文件</li><li>package.json 中必须包含 name，version，main 这三个属性，分别代表包的名字、版本号、包的入口。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;模块化的基本概念&quot;&gt;&lt;a href=&quot;#模块化的基本概念&quot; class=&quot;headerlink&quot; title=&quot;模块化的基本概念&quot;&gt;&lt;/a&gt;模块化的基本概念&lt;/h2&gt;&lt;p&gt;编程领域中的模块化，就是遵守固定的规则，把一个大文件拆成独立并互相依赖的多个小模块。 &lt;/p</summary>
+      
     
     
     
@@ -487,33 +507,6 @@
 &lt;li&gt;定义父类型构造函数&lt;/li&gt;
 &lt;li&gt;给父类型的原型添加方法&lt;/li&gt;
 &lt;li&gt;定义</summary>
-      
-    
-    
-    
-    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
-    
-    <category term="JS高级" scheme="http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/"/>
-    
-    
-    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>05 对象创建模式</title>
-    <link href="http://example.com/2022/02/21/05%20%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://example.com/2022/02/21/05%20%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F/</id>
-    <published>2022-02-21T04:45:34.000Z</published>
-    <updated>2022-02-21T05:44:46.639Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Object构造函数模式"><a href="#Object构造函数模式" class="headerlink" title="Object构造函数模式"></a>Object构造函数模式</h2><ul><li>套路: 先创建空Object对象, 再动态添加属性&#x2F;方法</li><li>适用场景: 起始时不确定对象内部数据</li><li>问题: 语句太多</li></ul><h2 id="对象字面量模式"><a href="#对象字面量模式" class="headerlink" title="对象字面量模式"></a>对象字面量模式</h2><ul><li>套路: 使用{}创建对象, 同时指定属性&#x2F;方法</li><li>适用场景: 起始时对象内部数据是确定的</li><li>问题: 如果创建多个对象, 有重复代码</li></ul><h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><ul><li>套路: 通过工厂函数动态创建对象并返回</li><li>适用场景: 需要创建多个对象</li><li>问题: 对象没有一个具体的类型, 都是Object类型</li></ul><h2 id="自定义构造函数模式"><a href="#自定义构造函数模式" class="headerlink" title="自定义构造函数模式"></a>自定义构造函数模式</h2><ul><li>套路: 自定义构造函数, 通过new创建对象</li><li>适用场景: 需要创建多个类型确定的对象</li><li>问题: 每个对象都有相同的数据, 浪费内存</li></ul><h2 id="构造函数-原型的组合模式"><a href="#构造函数-原型的组合模式" class="headerlink" title="构造函数+原型的组合模式"></a>构造函数+原型的组合模式</h2><ul><li>套路: 自定义构造函数, 属性在函数中初始化, 方法添加到原型上</li><li>适用场景: 需要创建多个类型确定的对象</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Object构造函数模式&quot;&gt;&lt;a href=&quot;#Object构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;Object构造函数模式&quot;&gt;&lt;/a&gt;Object构造函数模式&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;套路: 先创建空Object对象, 再动态添加属</summary>
       
     
     
