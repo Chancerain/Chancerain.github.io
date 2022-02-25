@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>02 模块化</title>
+      <link href="/2022/02/25/02-%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
+      <url>/2022/02/25/02-%E6%A8%A1%E5%9D%97%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Node.js </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> Node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>07 定位</title>
       <link href="/2022/02/25/07-%E5%AE%9A%E4%BD%8D/"/>
       <url>/2022/02/25/07-%E5%AE%9A%E4%BD%8D/</url>
@@ -346,7 +373,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue进阶 </category>
           
@@ -355,7 +382,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -649,7 +676,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue插件 </category>
           
@@ -658,7 +685,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -676,7 +703,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue基础 </category>
           
@@ -685,7 +712,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -703,7 +730,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> 组件 </category>
           
@@ -712,7 +739,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -730,7 +757,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue插件 </category>
           
@@ -739,7 +766,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -757,7 +784,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue插件 </category>
           
@@ -766,7 +793,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
             <tag> Axios </tag>
             
@@ -786,7 +813,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> 组件 </category>
           
@@ -795,7 +822,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -813,7 +840,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue基础 </category>
           
@@ -822,7 +849,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -840,7 +867,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue基础 </category>
           
@@ -849,7 +876,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -867,7 +894,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue基础 </category>
           
@@ -876,7 +903,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -894,7 +921,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue基础 </category>
           
@@ -903,7 +930,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -921,7 +948,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue基础 </category>
           
@@ -930,7 +957,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -948,7 +975,7 @@
       
       <categories>
           
-          <category> Vue </category>
+          <category> Vue.js </category>
           
           <category> Vue基础 </category>
           
@@ -957,7 +984,7 @@
       
         <tags>
             
-            <tag> Vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -1355,11 +1382,11 @@
     
     
     <entry>
-      <title>Node</title>
-      <link href="/2022/02/14/Node/"/>
-      <url>/2022/02/14/Node/</url>
+      <title>01 http模块</title>
+      <link href="/2022/02/14/01%20http%E6%A8%A1%E5%9D%97/"/>
+      <url>/2022/02/14/01%20http%E6%A8%A1%E5%9D%97/</url>
       
-        <content type="html"><![CDATA[<h2 id="创建最基本的web服务器"><a href="#创建最基本的web服务器" class="headerlink" title="创建最基本的web服务器"></a>创建最基本的web服务器</h2><h3 id="创建web服务器的基本步骤"><a href="#创建web服务器的基本步骤" class="headerlink" title="创建web服务器的基本步骤"></a>创建web服务器的基本步骤</h3><ol><li>导入 http 模块</li><li>创建 web 服务器实例</li><li>为服务器实例绑定 <strong>request</strong> 事件，监听客户端的请求</li><li>启动服务器</li></ol><h3 id="导入http模块"><a href="#导入http模块" class="headerlink" title="导入http模块"></a>导入http模块</h3>]]></content>
+        <content type="html"><![CDATA[<h2 id="创建最基本的web服务器"><a href="#创建最基本的web服务器" class="headerlink" title="创建最基本的web服务器"></a>创建最基本的web服务器</h2><h3 id="创建web服务器的基本步骤"><a href="#创建web服务器的基本步骤" class="headerlink" title="创建web服务器的基本步骤"></a>创建web服务器的基本步骤</h3><ol><li>导入 http 模块</li><li>创建 web 服务器实例</li><li>为服务器实例绑定 <strong>request</strong> 事件，监听客户端的请求</li><li>启动服务器</li></ol><h3 id="导入http模块"><a href="#导入http模块" class="headerlink" title="导入http模块"></a>导入http模块</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="创建-web-服务器实例"><a href="#创建-web-服务器实例" class="headerlink" title="创建 web 服务器实例"></a>创建 web 服务器实例</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="为服务器实例绑定-request-事件"><a href="#为服务器实例绑定-request-事件" class="headerlink" title="为服务器实例绑定 request 事件"></a>为服务器实例绑定 request 事件</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//使用服务器实例的 .on方法，为服务器绑定一个 request 事件</span>server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>  <span class="token comment">//只要有客户端来请求我们自己的服务器，就会出发request事件，从而调用这个事件的处理函数</span>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Some visit our web server.'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h3><p>调用服务器的.listen()方法，即可启动当前的web服务器实例：</p><pre class="line-numbers language-js" data-language="js"><code class="language-js">server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'http server running at http://127.0.0.1'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="根据不同的-url-响应不同的-html-内容"><a href="#根据不同的-url-响应不同的-html-内容" class="headerlink" title="根据不同的 url 响应不同的 html 内容"></a>根据不同的 url 响应不同的 html 内容</h2><h3 id="核心实现步骤"><a href="#核心实现步骤" class="headerlink" title="核心实现步骤"></a>核心实现步骤</h3><ol><li>获取请求的 url 地址</li><li>设置默认的响应内容为 404 Not found</li><li>判断用户请求的是否为 &#x2F; 或 &#x2F;index.html 首页</li><li>判断用户请求的是否为 &#x2F;about.html 关于页面</li><li>设置 Content-Type 响应头，防止中文乱码</li><li>使用 res.end() 把内容响应给客户端</li></ol>]]></content>
       
       
       <categories>
