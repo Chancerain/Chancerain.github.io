@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2022/02/26/MySQL/</loc>
+    <loc>http://example.com/2022/02/26/08-%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/</loc>
     
     <lastmod>2022-02-26</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/26/08-%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/</loc>
+    <loc>http://example.com/2022/02/26/MySQL/</loc>
     
     <lastmod>2022-02-26</lastmod>
     
@@ -667,13 +667,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/Axios/</loc>
-    <lastmod>2022-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/ES6/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -681,7 +674,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/HTML/</loc>
+    <loc>http://example.com/tags/Axios/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -689,6 +682,13 @@
   
   <url>
     <loc>http://example.com/tags/Git/</loc>
+    <lastmod>2022-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/HTML/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -732,13 +732,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/</loc>
-    <lastmod>2022-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/Vue-js/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -753,7 +746,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/</loc>
+    <loc>http://example.com/categories/JavaScript/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -774,14 +767,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/Vue-js/Vue%E6%8F%92%E4%BB%B6/</loc>
+    <loc>http://example.com/categories/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -802,7 +795,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/HTML/</loc>
+    <loc>http://example.com/categories/Vue-js/Vue%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -810,6 +803,13 @@
   
   <url>
     <loc>http://example.com/categories/%E6%9D%82/</loc>
+    <lastmod>2022-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/HTML/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -837,13 +837,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
-    <lastmod>2022-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/JavaScript/%E6%9D%82/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -852,6 +845,13 @@
   
   <url>
     <loc>http://example.com/categories/Vue-js/Vue%E8%BF%9B%E9%98%B6/</loc>
+    <lastmod>2022-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
     <lastmod>2022-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
