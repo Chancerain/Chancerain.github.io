@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2022/03/10/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</loc>
+    <loc>http://example.com/2022/02/23/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81/</loc>
     
     <lastmod>2022-03-10</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/23/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81/</loc>
+    <loc>http://example.com/2022/03/10/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</loc>
     
     <lastmod>2022-03-10</lastmod>
     
@@ -721,14 +721,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/ES6/</loc>
+    <loc>http://example.com/tags/Ajax/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Ajax/</loc>
+    <loc>http://example.com/tags/ES6/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -793,13 +793,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/Node-js/</loc>
-    <lastmod>2022-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/JavaScript/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -807,7 +800,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/CSS/</loc>
+    <loc>http://example.com/categories/Node-js/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -821,7 +814,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/</loc>
+    <loc>http://example.com/categories/CSS/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -835,7 +828,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/ES6/</loc>
+    <loc>http://example.com/categories/JavaScript/JS%E9%AB%98%E7%BA%A7/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -843,6 +836,13 @@
   
   <url>
     <loc>http://example.com/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2022-03-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/JavaScript/ES6/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -891,7 +891,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/%E6%9D%82/</loc>
+    <loc>http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -905,7 +905,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
+    <loc>http://example.com/categories/JavaScript/%E6%9D%82/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
