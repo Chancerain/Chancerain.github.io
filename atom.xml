@@ -368,9 +368,9 @@
     <category term="CSS" scheme="http://example.com/categories/CSS/"/>
     
     
-    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
-    
     <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
     
   </entry>
   
@@ -396,9 +396,9 @@
     <category term="CSS" scheme="http://example.com/categories/CSS/"/>
     
     
-    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
-    
     <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
     
   </entry>
   
