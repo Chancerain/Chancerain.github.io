@@ -220,9 +220,9 @@
     <category term="杂" scheme="http://example.com/categories/Vue-js/%E6%9D%82/"/>
     
     
-    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
-    
     <category term="Vue.js" scheme="http://example.com/tags/Vue-js/"/>
+    
+    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
     
   </entry>
   
@@ -408,9 +408,9 @@
     <category term="CSS" scheme="http://example.com/categories/CSS/"/>
     
     
-    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
-    
     <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
     
   </entry>
   
@@ -436,9 +436,9 @@
     <category term="CSS" scheme="http://example.com/categories/CSS/"/>
     
     
-    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
-    
     <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+    <category term="Interview" scheme="http://example.com/tags/Interview/"/>
     
   </entry>
   
